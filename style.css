@@ -113,6 +113,9 @@ h1{
     font-weight: 500;
     letter-spacing: 0.2vh;
     margin-top: 0;
+    display: flex;
+    justify-content: center;
+
 }
 .description{
     
