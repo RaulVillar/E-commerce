@@ -7,6 +7,11 @@
     height: 200px;
 }
 
+#product-description {
+    font-size: 1.8vh;
+    font-weight: lighter;
+}
+
 #product-price {
     font-size: 1.5vh;
 }

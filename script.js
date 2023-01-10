@@ -141,48 +141,44 @@ const DOMexclusive = document.querySelector('#exclusive');
 
 function renderItems() {
 
-    for (let i = 0; i < products.length; i++) {
+   var exclusive = products.filter (item => item.category == "Exclusive")
+   exclusive.forEach ((item) => {printItems(item)})
 
-        if (products[i].category == "New") {
-            DOMnew.innerHTML + printItems () 
-        }
-        if (products[i].category == "Products") { 
+//    var products = products.filter (item => item.category == "Products")
+//    products.forEach ((item) => {printItems(item)})
 
-        }
-        if (products[i].category == "Exclusive") {
-            
-        }
-    }
+   
 }
 
+renderItems ()
 
-function printItems() {
-
-    for (let i = 0; i < products.length; i++) {
+function printItems(item) {
 
         const myProduct = document.createElement("div");
         myProduct.id = "box";
         document.body.appendChild(myProduct);
 
         const myProductTitle = document.createElement('h2');
-        myProductTitle.innerText = products[i].name;
+        myProductTitle.innerText = item.name;
         myProductTitle.id = 'product-title';
 
         const myProductImage = document.createElement("img");
-        myProductImage.src = products[i].image;
+        myProductImage.src = item.image;
         myProductImage.id = 'product-image';
+        
+        const myProductDescription = document.createElement('p');
+        myProductDescription.innerText = item.description;
+        myProductDescription.id = 'product-description';
 
         const myProductPrice = document.createElement("p");
-        myProductPrice.innerText = products[i].price + divisa;
+        myProductPrice.innerText = item.price + divisa;
         myProductPrice.id = 'product-price';
 
-
-
-        myProduct.appendChild(myProductTitle)
-        myProduct.appendChild(myProductImage)
-        myProduct.appendChild(myProductPrice)
+        myProduct.appendChild(myProductTitle);
+        myProduct.appendChild(myProductImage);
+        myProduct.appendChild(myProductDescription);
+        myProduct.appendChild(myProductPrice);
     }
-}
 
-printItems()
+
 
