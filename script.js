@@ -222,6 +222,3 @@ function printExclusive(item) {
     myProduct.appendChild(myProductPrice);
     DOMexclusive.appendChild(myProduct);
 }
-
-
-
