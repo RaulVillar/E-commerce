@@ -222,3 +222,8 @@ function printExclusive(item) {
     myProduct.appendChild(myProductPrice);
     DOMexclusive.appendChild(myProduct);
 }
+
+let carrito
+
+addEventListener(click)
+carrito.push
