@@ -1,5 +1,5 @@
 function renderProducts() {
-    products.forEach((category) => {
+    products.forEach((categor) => {
         const miArticle = document.createElement("div"); //Estructura
         miArticle.classList.add("card", "col-sm-4");
 
