@@ -220,7 +220,7 @@ function printExclusive(item) {
     myProduct.appendChild(myProductImage);
     myProduct.appendChild(myProductDescription);
     myProduct.appendChild(myProductPrice);
-    DOMexclusive.appendChild(myProduct)
+    DOMexclusive.appendChild(myProduct);
 }
 
 
