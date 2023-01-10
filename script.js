@@ -9,27 +9,27 @@ const products = [
     },
     {
         id: 2,
-        name: "Bebida de café Asahi Wonda Premium",
+        name: "Bebida de cafe Asahi Wonda Premium",
         price: 1.50,
-        description: "El café de la marca Asahi, fabricado por japoneses y para japoneses, es un producto exclusivo.",
+        description: "El cafe de la marca Asahi, fabricado por japoneses y para japoneses, es un producto exclusivo.",
         image: 'imagenes/prd-bebida-cafe-asahi-wonda-gold-premium-1-japonshop_2.webp',
         category: "New"
 
     },
     {
         id: 3,
-        name: "Bombones de melocotón y chocolate",
+        name: "Bombones de chocolate",
         price: 3,
-        description: "Una explosión de sabor inigualable, un producto exquisito fabricado por los más expertos chocolateros nipones. Pruébalo.",
+        description: "Una explosion de sabor inigualable, un producto exquisito fabricado por los más expertos chocolateros nipones.",
         image: 'imagenes/prd-bombones-petit-melo-chocolate-frambuesa-japonshop.webp',
         category: "New"
 
     },
     {
         id: 4,
-        name: "Chicles de One Piece",
+        name: "Chicles de melocoton One Piece",
         price: 2.50,
-        description: "Chicles sabor melocotón, no te concederán poderes ni te servirán para encontrar el One Piece, pero están riquísimos.",
+        description: "Chicles sabor melocoton, no te concederan poderes, pero estan riquisimos.",
         image: 'imagenes/prd-chicles-one-piece-japon-japonshop.webp',
         category: "New"
 
@@ -54,7 +54,7 @@ const products = [
     },
     {
         id: 8,
-        name: "Galleta Pokemon Fresa",
+        name: "Galleta Pokemon",
         price: 3,
         description: "Una adorable galletita con un pokemon sorpresa. Hay mas de 20 misteriosos pokemons por comer!",
         image: 'imagenes/prd-galleta-pokemon-fresa-japonshop.webp',
@@ -63,7 +63,7 @@ const products = [
     },
     {
         id: 9,
-        name: "Ramen de pollo Chikin",
+        name: "Ramen Chikin",
         price: 3,
         description: "Como lo escuchas, un ramen sabor a pizza cuatro quesos procedente de la famosa marca Chikin.",
         image: 'imagenes/prd-ramen-pollo-chikin-pizza-japonshop_1.webp',
@@ -81,7 +81,7 @@ const products = [
         id: 11,
         name: "Salsa de curry de Doraemon",
         price: 3.20,
-        description: "Una salsa de curry, con cerdo, verduras y queso, que se ha sacado Doraemon del bolsillo mágico.",
+        description: "Una salsa de curry, con cerdo, verduras y queso, que se ha sacado Doraemon del bolsillo magico.",
         image: 'imagenes/prd-salsa-curry-japonesa-cerdo-verduras-queso-doraemon-japonshop_1.webp',
         category: "Exclusive"
     },
@@ -89,7 +89,7 @@ const products = [
         id: 12,
         name: "Sopa de maiz de Pokemon",
         price: 1.75,
-        description: "Nutritiva sopita de maiz con temática de Pokemon. *No incluye trazas de pokemons",
+        description: "Nutritiva sopita de maiz con tematica de Pokemon. *No incluye trazas de pokemons",
         image: 'imagenes/prd-sopa-maiz-pokemon-japonesa-japonshop.webp',
         category: "Exclusive"
     },
@@ -159,7 +159,7 @@ function printNew(item) {
     myProductPrice.id = 'product-price';
    
    const myProductButton = document.createElement("button");
-   myProductButton.innerHTML = "buy"
+   myProductButton.innerHTML = "Shop"
    myProductButton.id='product-button';
   
   
@@ -196,7 +196,7 @@ function printProduct(item) {
     myProductPrice.id = 'product-price';
 
     const myProductButton = document.createElement("button");
-    myProductButton.innerHTML = "buy"
+    myProductButton.innerHTML = "Shop"
     myProductButton.id='product-button';
 
     myProduct.appendChild(myProductTitle);
@@ -231,13 +231,14 @@ function printExclusive(item) {
     myProductPrice.id = 'product-price';
 
     const myProductButton = document.createElement("button");
-    myProductButton.innerHTML = "buy"
+    myProductButton.innerHTML = "Shop"
     myProductButton.id='product-button';
 
     myProduct.appendChild(myProductTitle);
     myProduct.appendChild(myProductImage);
     myProduct.appendChild(myProductDescription);
     myProduct.appendChild(myProductPrice);
+    myProduct.appendChild(myProductButton);
     DOMexclusive.appendChild(myProduct)
 }
 
