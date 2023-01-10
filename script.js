@@ -146,7 +146,7 @@ const products = [
            
            const para = document.createElement("div");
            para.innerHTML = "prueba"
-           document.getElementById("exclusive").appendChild(para);
+           document.getElementById("exclusive1").appendChild(para);
         
         
            
