@@ -3,7 +3,7 @@ const products = [
         id: 1,
         name: "Refresco de Sailor Moon",
         price: 1.50,
-        description: "Un producto la mar de refrescante, sabor a pomelo y con la grandiosa Sailor Moon como protagonista",
+        description: "Un producto la mar de refrescante, sabor a pomelo y con la grandiosa Sailor Moon como protagonista.",
         image: 'imagenes/prd-agua-soda-sabor-pomelo-edicion-sailor-moon-japonshop_2.webp',
         category: "New"
     },
@@ -11,16 +11,16 @@ const products = [
         id: 2,
         name: "Bebida de café Asahi Wonda Premium",
         price: 1.50,
-        description: "El café de la marca Asahi, fabricado por japoneses y para japoneses, es un producto exclusivo que acompaña a estudiantes y oficinistas en sus largas jornadas de exhaustivo trabajo.",
+        description: "El café de la marca Asahi, fabricado por japoneses y para japoneses, es un producto exclusivo.",
         image: 'imagenes/prd-bebida-cafe-asahi-wonda-gold-premium-1-japonshop_2.webp',
         category: "New"
 
     },
     {
         id: 3,
-        name: "Bombones de melocotón, frambuesa y chocolate",
+        name: "Bombones de melocotón y chocolate",
         price: 3,
-        description: "Una explosión de sabor inigualable, un producto exquisito fabricado por los más expertos chocolateros nipones. Pruébalo",
+        description: "Una explosión de sabor inigualable, un producto exquisito fabricado por los más expertos chocolateros nipones. Pruébalo.",
         image: 'imagenes/prd-bombones-petit-melo-chocolate-frambuesa-japonshop.webp',
         category: "New"
 
@@ -63,7 +63,7 @@ const products = [
     },
     {
         id: 9,
-        name: "Ramen de pollo Chikin sabor pizza",
+        name: "Ramen de pollo Chikin",
         price: 3,
         description: "Como lo escuchas, un ramen sabor a pizza cuatro quesos procedente de la famosa marca Chikin.",
         image: 'imagenes/prd-ramen-pollo-chikin-pizza-japonshop_1.webp',
@@ -101,6 +101,7 @@ const products = [
         image: 'imagenes/prd-te-cebada-japones-edicion-limitada-rilakkuma-japonshop.webp',
         category: "Exclusive"
     },
+   
 ]
 
 
@@ -156,12 +157,20 @@ function printNew(item) {
     const myProductPrice = document.createElement("p");
     myProductPrice.innerText = item.price + divisa;
     myProductPrice.id = 'product-price';
+   
+   const myProductButton = document.createElement("button");
+   myProductButton.innerHTML = "buy"
+   myProductButton.id='product-button';
+  
+  
 
     myProduct.appendChild(myProductTitle);
     myProduct.appendChild(myProductImage);
     myProduct.appendChild(myProductDescription);
     myProduct.appendChild(myProductPrice);
+    myProduct.appendChild(myProductButton);
     DOMnew.appendChild(myProduct)
+    
 }
 
 function printProduct(item) {
@@ -186,10 +195,15 @@ function printProduct(item) {
     myProductPrice.innerText = item.price + divisa;
     myProductPrice.id = 'product-price';
 
+    const myProductButton = document.createElement("button");
+    myProductButton.innerHTML = "buy"
+    myProductButton.id='product-button';
+
     myProduct.appendChild(myProductTitle);
     myProduct.appendChild(myProductImage);
     myProduct.appendChild(myProductDescription);
     myProduct.appendChild(myProductPrice);
+    myProduct.appendChild(myProductButton);
     DOMproducts.appendChild(myProduct)
 }
 
@@ -216,9 +230,14 @@ function printExclusive(item) {
     myProductPrice.innerText = item.price + divisa;
     myProductPrice.id = 'product-price';
 
+    const myProductButton = document.createElement("button");
+    myProductButton.innerHTML = "buy"
+    myProductButton.id='product-button';
+
     myProduct.appendChild(myProductTitle);
     myProduct.appendChild(myProductImage);
     myProduct.appendChild(myProductDescription);
     myProduct.appendChild(myProductPrice);
+    myProduct.appendChild(myProductButton);
     DOMexclusive.appendChild(myProduct)
 }
