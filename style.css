@@ -1,20 +1,23 @@
 *{
-    font-family: 'M PLUS Rounded 1c', sans-serif;
-        color: black;
+    font-family: 'Josefin Slab', serif;
+    color: black;
         margin: 0;
         padding: 0;
+        font-weight: 800;
        
       
 }
 
 body{
     width: 100vw;
-    background-color: white;
+    
+    
    
 }
 
 header{
-    
+    padding-top: 2vh;
+    padding-bottom: 0.2vh;
     width: 100vw;
     height: 5vh;
     background-color: rgb(184, 184, 247);
@@ -37,16 +40,20 @@ li{
     font-size: 3vh;
     
     
-    
 }
 
 li:hover{
     font-weight: 600;
+    text-decoration: underline;
+    cursor: pointer;
+    
+    
 }
 
 #carrito{
     width: 6vh;
     height: 5vh;
+    margin-top:-3px;
 }
 #logo-div{
     display: flex;
@@ -55,48 +62,100 @@ li:hover{
     height: 25vh;
 }
 
+#logo {
+    margin-top: 3vh;
+}
+
 
 
 
 
 h1{
-    background-color: rgb(124, 124, 187);
+    background-color: rgba(124, 124, 187, 0.364);
     width: 100vw;
     margin-bottom: 0;
     text-align: center;
     letter-spacing: 2vh;
     font-weight: 300;
+    padding:3vh;
 }
 
 
  #new, #products, #exclusive{
-   display: flex;
-flex-direction: row;
-   justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; 
+    align-items: flex-start;
+    font-weight: 600;
+    padding-bottom: 10vh;
+    padding-top: 10vh;
+    
+  
 }
+
+
+
 
  
 #product-image{
     width: 18vh;
     height: 30vh;
     margin-top: 2vh;
+   margin-left: 10vh;
+   transition: all .2s ease-in-out; 
+
+    
+   
 }
+
+#product-image:hover{
+    transform: scale(1.1);
+
+        }
+
+
  #product-title {
     font-weight: 500;
-    letter-spacing: 0.2vh;
+    letter-spacing: 0.1vh;
     margin-top: 0;
-    font-size: 15px;
+    font-size: 4vh;
+    font-weight: 800;
+    margin-left: 3vh;
+    
+    text-align: center;
+    max-width: 50vh;
+    
+    
+   
   
 
 }
 #product-description{
+    margin-top: 3vh;
+    width: 50vh;
+    max-width: 50vh;
+    line-height: 3.5vh;
     
-    width: 30vh;
-    max-width: vh;
 
 }
 
+#product-price{
+    font-size: 30px;
+    margin-top: 3vh
+    
+}
 
+#product-button{
+    margin-top: 1vh;
+    font-size: 15px;
+    background-color: transparent;
+   border-radius: 12%;
+   border-color: rgb(184, 184, 247);
+}
+#product-button:hover{
+    background-color: rgb(184, 184, 247);
+    cursor: pointer;
+}
 
 footer{
     background-color:  rgb(184, 184, 247);
