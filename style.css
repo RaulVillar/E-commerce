@@ -91,7 +91,7 @@ flex-direction: row;
 #product-description{
     
     width: 30vh;
-    max-width: 30vh;
+    max-width: vh;
 
 }
 
