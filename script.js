@@ -5,10 +5,7 @@ const products = [
         price: 1.50,
         description: "Un producto la mar de refrescante, sabor a pomelo y con la grandiosa Sailor Moon como protagonista",
         image: 'imagenes/prd-agua-soda-sabor-pomelo-edicion-sailor-moon-japonshop_2.webp',
-        category: [
-            "Products",
-            "New"
-        ]
+        category: "New"
     },
     {
         id: 2,
@@ -16,10 +13,8 @@ const products = [
         price: 1.50,
         description: "El café de la marca Asahi, fabricado por japoneses y para japoneses, es un producto exclusivo que acompaña a estudiantes y oficinistas en sus largas jornadas de exhaustivo trabajo.",
         image: 'imagenes/prd-bebida-cafe-asahi-wonda-gold-premium-1-japonshop_2.webp',
-        category: [
-            "Products",
-            "New"
-        ]
+        category: "New"
+
     },
     {
         id: 3,
@@ -27,10 +22,8 @@ const products = [
         price: 3,
         description: "Una explosión de sabor inigualable, un producto exquisito fabricado por los más expertos chocolateros nipones. Pruébalo",
         image: 'imagenes/prd-bombones-petit-melo-chocolate-frambuesa-japonshop.webp',
-        category: [
-            "Products",
-            "New"
-        ]
+        category: "New"
+
     },
     {
         id: 4,
@@ -38,21 +31,8 @@ const products = [
         price: 2.50,
         description: "Chicles sabor melocotón, no te concederán poderes ni te servirán para encontrar el One Piece, pero están riquísimos.",
         image: 'imagenes/prd-chicles-one-piece-japon-japonshop.webp',
-        category: [
-            "Products",
-            "New"
-        ]
-    },
-    {
-        id: 5,
-        name: "Crema de caramelo japonesa",
-        price: 5,
-        description: "Una crema especialmente cremosa, con un sabor no excesivamente dulce. Es adictiva",
-        image: 'imagenes/prd-crema-coco-caramelo-japonshop.webp',
-        category: [
-            "Products",
-            "New"
-        ]
+        category: "New"
+
     },
     {
         id: 6,
@@ -60,16 +40,14 @@ const products = [
         price: 2,
         description: "Una bolsita de fideos, sabor a pollo, con los ingredientes preferidos de nuestro amado Naruto.",
         image: 'imagenes/prd-fideos-ramen-naruto-yile-setas-japon-japonshop_1.webp',
-        category: [
-            "Products",
-            "New"
-        ]
+        category: "Products"
+
     },
     {
         id: 7,
         name: "Puzle de Sanrio",
         price: 6,
-        description: "El puzle de Sanrio no es comestible, pero es adorable y muy entretenido de montar *No ingerir",
+        description: "El puzle de Sanrio no es comestible, pero es adorable y muy entretenido de montar.",
         image: 'imagenes/prd-diy-puzle-sanrio-friends-japonshop.webp',
         category: "Products"
 
@@ -123,14 +101,6 @@ const products = [
         image: 'imagenes/prd-te-cebada-japones-edicion-limitada-rilakkuma-japonshop.webp',
         category: "Exclusive"
     },
-    {
-        id: 14,
-        name: "Ramen de Udon coreano",
-        price: 4.20,
-        description: "¿Por qué hay ramen de Udon coreano en una página de productos japoneses? Yo que sé.",
-        image: 'imagenes/prd-udon-coreano-big-nongshim-big-japonshop.webp',
-        category: "Exclusive"
-    },
 ]
 
 
@@ -139,46 +109,119 @@ const DOMnew = document.querySelector('#new');
 const DOMproducts = document.querySelector('#products');
 const DOMexclusive = document.querySelector('#exclusive');
 
-function renderItems() {
 
-   var exclusive = products.filter (item => item.category == "Exclusive")
-   exclusive.forEach ((item) => {printItems(item)})
+function renderNew() {
 
-//    var products = products.filter (item => item.category == "Products")
-//    products.forEach ((item) => {printItems(item)})
+    var news = products.filter(item => item.category == "New")
+    news.forEach((item) => { printNew(item) })
 
-   
 }
 
-renderItems ()
+function renderProducts() {
 
-function printItems(item) {
+    var product = products.filter(item => item.category == "Products")
+    product.forEach((item) => { printProduct(item) })
 
-        const myProduct = document.createElement("div");
-        myProduct.id = "box";
-        document.body.appendChild(myProduct);
+}
 
-        const myProductTitle = document.createElement('h2');
-        myProductTitle.innerText = item.name;
-        myProductTitle.id = 'product-title';
+function renderExclusive() {
 
-        const myProductImage = document.createElement("img");
-        myProductImage.src = item.image;
-        myProductImage.id = 'product-image';
-        
-        const myProductDescription = document.createElement('p');
-        myProductDescription.innerText = item.description;
-        myProductDescription.id = 'product-description';
+    var exclusive = products.filter(item => item.category == "Exclusive")
+    exclusive.forEach((item) => { printExclusive(item) })
 
-        const myProductPrice = document.createElement("p");
-        myProductPrice.innerText = item.price + divisa;
-        myProductPrice.id = 'product-price';
+}
 
-        myProduct.appendChild(myProductTitle);
-        myProduct.appendChild(myProductImage);
-        myProduct.appendChild(myProductDescription);
-        myProduct.appendChild(myProductPrice);
-    }
+renderProducts()
+renderNew()
+renderExclusive()
+
+function printNew(item) {
+
+    const myProduct = document.createElement("div");
+    myProduct.id = "box";
+    document.body.appendChild(myProduct);
+
+    const myProductTitle = document.createElement('h2');
+    myProductTitle.innerText = item.name;
+    myProductTitle.id = 'product-title';
+
+    const myProductImage = document.createElement("img");
+    myProductImage.src = item.image;
+    myProductImage.id = 'product-image';
+
+    const myProductDescription = document.createElement('p');
+    myProductDescription.innerText = item.description;
+    myProductDescription.id = 'product-description';
+
+    const myProductPrice = document.createElement("p");
+    myProductPrice.innerText = item.price + divisa;
+    myProductPrice.id = 'product-price';
+
+    myProduct.appendChild(myProductTitle);
+    myProduct.appendChild(myProductImage);
+    myProduct.appendChild(myProductDescription);
+    myProduct.appendChild(myProductPrice);
+    DOMnew.appendChild(myProduct)
+}
+
+function printProduct(item) {
+
+    const myProduct = document.createElement("div");
+    myProduct.id = "box";
+    document.body.appendChild(myProduct);
+
+    const myProductTitle = document.createElement('h2');
+    myProductTitle.innerText = item.name;
+    myProductTitle.id = 'product-title';
+
+    const myProductImage = document.createElement("img");
+    myProductImage.src = item.image;
+    myProductImage.id = 'product-image';
+
+    const myProductDescription = document.createElement('p');
+    myProductDescription.innerText = item.description;
+    myProductDescription.id = 'product-description';
+
+    const myProductPrice = document.createElement("p");
+    myProductPrice.innerText = item.price + divisa;
+    myProductPrice.id = 'product-price';
+
+    myProduct.appendChild(myProductTitle);
+    myProduct.appendChild(myProductImage);
+    myProduct.appendChild(myProductDescription);
+    myProduct.appendChild(myProductPrice);
+    DOMproducts.appendChild(myProduct)
+}
+
+
+function printExclusive(item) {
+
+    const myProduct = document.createElement("div");
+    myProduct.id = "box";
+    document.body.appendChild(myProduct);
+
+    const myProductTitle = document.createElement('h2');
+    myProductTitle.innerText = item.name;
+    myProductTitle.id = 'product-title';
+
+    const myProductImage = document.createElement("img");
+    myProductImage.src = item.image;
+    myProductImage.id = 'product-image';
+
+    const myProductDescription = document.createElement('p');
+    myProductDescription.innerText = item.description;
+    myProductDescription.id = 'product-description';
+
+    const myProductPrice = document.createElement("p");
+    myProductPrice.innerText = item.price + divisa;
+    myProductPrice.id = 'product-price';
+
+    myProduct.appendChild(myProductTitle);
+    myProduct.appendChild(myProductImage);
+    myProduct.appendChild(myProductDescription);
+    myProduct.appendChild(myProductPrice);
+    DOMexclusive.appendChild(myProduct)
+}
 
 
 
