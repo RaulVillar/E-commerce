@@ -1,37 +1,37 @@
-//const products = [
-    var product1{
-        id: 1,
-        name: "Refresco de Sailor Moon",
-        price: 1.50,
-        description: "Un producto la mar de refrescante, sabor a pomelo y con la grandiosa Sailor Moon como protagonista",
-        image: 'imagenes/prd-agua-soda-sabor-pomelo-edicion-sailor-moon-japonshop_2.webp',
-        category: [
-            "Products",
-            "New"
-        ]
-    },
-   var product2{
-        id: 2,
-        name: "Bebida de café Asahi Wonda Premium",
-        price: 1.50,
-        description: "El café de la marca Asahi, fabricado por japoneses y para japoneses, es un producto exclusivo que acompaña a estudiantes y oficinistas en sus largas jornadas de exhaustivo trabajo.",
-        image: 'imagenes/prd-bebida-cafe-asahi-wonda-gold-premium-1-japonshop_2.webp',
-        category: [
-            "Products",
-            "New"
-        ]
-    },
-    var product3{
-        id: 3,
-        name: "Bombones de melocotón, frambuesa y chocolate",
-        price: 3,
-        description: "Una explosión de sabor inigualable, un producto exquisito fabricado por los más expertos chocolateros nipones. Pruébalo",
-        image: 'imagenes/prd-bombones-petit-melo-chocolate-frambuesa-japonshop.webp',
-        category: [
-            "Products",
-            "New"
-        ]
-    },
+// const products = [
+//     var product1{
+//         id: 1,
+//         name: "Refresco de Sailor Moon",
+//         price: 1.50,
+//         description: "Un producto la mar de refrescante, sabor a pomelo y con la grandiosa Sailor Moon como protagonista",
+//         image: 'imagenes/prd-agua-soda-sabor-pomelo-edicion-sailor-moon-japonshop_2.webp',
+//         category: [
+//             "Products",
+//             "New"
+//         ]
+//     },
+//    var product2{
+//         id: 2,
+//         name: "Bebida de café Asahi Wonda Premium",
+//         price: 1.50,
+//         description: "El café de la marca Asahi, fabricado por japoneses y para japoneses, es un producto exclusivo que acompaña a estudiantes y oficinistas en sus largas jornadas de exhaustivo trabajo.",
+//         image: 'imagenes/prd-bebida-cafe-asahi-wonda-gold-premium-1-japonshop_2.webp',
+//         category: [
+//             "Products",
+//             "New"
+//         ]
+//     },
+//     var product3{
+//         id: 3,
+//         name: "Bombones de melocotón, frambuesa y chocolate",
+//         price: 3,
+//         description: "Una explosión de sabor inigualable, un producto exquisito fabricado por los más expertos chocolateros nipones. Pruébalo",
+//         image: 'imagenes/prd-bombones-petit-melo-chocolate-frambuesa-japonshop.webp',
+//         category: [
+//             "Products",
+//             "New"
+//         ]
+//     },
 //     {
 //         id: 4,
 //         name: "Chicles de One Piece",
