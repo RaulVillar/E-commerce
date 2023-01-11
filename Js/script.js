@@ -148,10 +148,11 @@ function printExclusive(item) {
 
 
 function shoppingButton(event) {
-    localStorage.setItem('cart',JSON.stringify(products[1]))
+     
+    localStorage.setItem('cart',JSON.stringify(products[event.target.getAttribute('marker')]))
 }
 
 
-
+console.info(shoppingButton)
 
 
