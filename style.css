@@ -166,3 +166,22 @@ footer {
     width: 60vh;
     height: 80vh;
 }
+/********************************
+***          SHOPPINGCART     ***
+********************************/
+
+.main-cart {
+    width: 60vw;
+}
+.total-cart {
+    width: 30vw;
+    text-align: center;
+}
+.body-cart {
+    display: flex;
+    justify-content: center;
+}
+
+.itemCart {
+    display: flex;
+}
