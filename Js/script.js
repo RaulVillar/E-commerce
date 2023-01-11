@@ -55,7 +55,7 @@ function printNew(item) {
     const myProductButton = document.createElement("button");
     myProductButton.innerHTML = "Shop"
     myProductButton.id = 'product-button';
-    myProductButton.setAttribute('marker', item);
+    myProductButton.setAttribute('marker', item.id);
     myProductButton.addEventListener('click', shoppingButton);
 
     myProduct.appendChild(myProductTitle);
@@ -92,7 +92,7 @@ function printProduct(item) {
     const myProductButton = document.createElement("button");
     myProductButton.innerHTML = "Shop"
     myProductButton.id = 'product-button';
-    myProductButton.setAttribute('marker', item);
+    myProductButton.setAttribute('marker', item.id);
     myProductButton.addEventListener('click', shoppingButton);
 
     myProduct.appendChild(myProductTitle);
@@ -129,7 +129,7 @@ function printExclusive(item) {
     const myProductButton = document.createElement("button");
     myProductButton.innerHTML = "Shop"
     myProductButton.id = 'product-button';
-    myProductButton.setAttribute('marker', item);
+    myProductButton.setAttribute('marker', item.id);
     myProductButton.addEventListener('click', shoppingButton);
 
     myProduct.appendChild(myProductTitle);
@@ -148,16 +148,10 @@ function printExclusive(item) {
 
 
 function shoppingButton(event) {
-
-var shoppingProduct = {}
-
-shoppingProduct.id = `${event.id}`
-shoppingProduct.image = `${event.image}`
-shoppingProduct.name = `${event.name}`
-shoppingProduct.price = `${event.price}`
-
-console.info (shoppingProduct)
-    carrito.push (shoppingProduct)
-    // carrito.push(event.target.getAttribute('marker'));
-    console.info (carrito);
+    localStorage.setItem('cart',JSON.stringify(products[1]))
 }
+
+
+
+
+
