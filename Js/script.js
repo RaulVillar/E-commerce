@@ -5,6 +5,7 @@ const DOMproducts = document.querySelector('#products');
 const DOMexclusive = document.querySelector('#exclusive');
 
 
+
 function renderNew() {
 
     var news = products.filter(item => item.category == "New");
@@ -26,9 +27,6 @@ function renderExclusive() {
 
 }
 
-renderNew()
-renderProducts()
-renderExclusive()
 
 function printNew(item) {
 
@@ -57,6 +55,7 @@ function printNew(item) {
     myProductButton.id = 'product-button';
     myProductButton.setAttribute('marker', item.id);
     myProductButton.addEventListener('click', shoppingButton);
+
 
     myProduct.appendChild(myProductTitle);
     myProduct.appendChild(myProductImage);
@@ -95,6 +94,7 @@ function printProduct(item) {
     myProductButton.setAttribute('marker', item.id);
     myProductButton.addEventListener('click', shoppingButton);
 
+
     myProduct.appendChild(myProductTitle);
     myProduct.appendChild(myProductImage);
     myProduct.appendChild(myProductDescription);
@@ -132,6 +132,7 @@ function printExclusive(item) {
     myProductButton.setAttribute('marker', item.id);
     myProductButton.addEventListener('click', shoppingButton);
 
+    
     myProduct.appendChild(myProductTitle);
     myProduct.appendChild(myProductImage);
     myProduct.appendChild(myProductDescription);
@@ -139,6 +140,7 @@ function printExclusive(item) {
     myProduct.appendChild(myProductButton);
     DOMexclusive.appendChild(myProduct);
 }
+
 
 
 
@@ -156,7 +158,18 @@ function shoppingButton(event) {
     console.info(cart)
 }
 
+    let storage = products[event.target.getAttribute('marker')];
+    
+    cart.push(storage)
 
-console.info(shoppingButton)
+    localStorage.setItem('cart', JSON.stringify(cart))
+    
+    console.info(cart)
+}
 
+
+
+renderNew()
+renderProducts()
+renderExclusive()
 
