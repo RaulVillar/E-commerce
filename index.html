@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,53 +8,41 @@
     <script src="Objects.js" defer></script>
     <script src="script.js" defer></script>
     <link href="style.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        @font-face {
+            font-family: "Harlow";
+            src: url("/Fonts/HelveticaNeueCyrBold.ttf");
+        }
 
-    <title>Document</title>
+        @font-face {
+            font-family: "Harlowlight";
+            src: url("/Fonts/HelveticaNeueCyr-Light.ttf");
+        }
+    </style>
+    <title>Japan Sweets</title>
 </head>
 
- <body>
-   
+<body>
     <header>
-        
         <ul>
-            
             <li>Inicio</li>
             <li>Sobre nosotros</li>
-            
             <li>Contacto</li>
-            <li><img src="imagenes/carrito.png" id="carrito"></li>
-            
+            <li><img src="/imagenes/carrito-de-compras.png" width= "50px" height= "50px" id="carrito"></li>
         </ul>
-
     </header>
-
     <div id="logo-div">
-
         <img src="imagenes/logo1.png" id="logo">
-        </div>
-
-
-<div class="container">
-   
-    <h1>Novedades</h1>
-    <div  id="new">
     </div>
-   
-     
-
-
-    <h1>Productos</h1>
-
-    <div  id="products">
-      
-    </div>
-   
-    <h1>Exclusivo socios</h1>
-
-    <div id="exclusive">
-        
+    <div class="container">
+        <h1 class="title-new">Novedades</h1>
+        <div id="new"></div>
+        <h1 class="title-products">Productos</h1>
+        <div id="products"></div>
+        <h1 class="title-exclusive">Exclusivo socios</h1>
+        <div id="exclusive"></div>
     </div>
 </div>
 

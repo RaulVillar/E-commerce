@@ -50,12 +50,20 @@ function printNew(item) {
     const myProductPrice = document.createElement("p");
     myProductPrice.innerText = item.price + divisa;
     myProductPrice.id = 'product-price';
+   
+   const myProductButton = document.createElement("button");
+   myProductButton.innerHTML = "Shop"
+   myProductButton.id='product-button';
+  
+  
 
     myProduct.appendChild(myProductTitle);
     myProduct.appendChild(myProductImage);
     myProduct.appendChild(myProductDescription);
     myProduct.appendChild(myProductPrice);
+    myProduct.appendChild(myProductButton);
     DOMnew.appendChild(myProduct)
+    
 }
 
 function printProduct(item) {
@@ -80,10 +88,15 @@ function printProduct(item) {
     myProductPrice.innerText = item.price + divisa;
     myProductPrice.id = 'product-price';
 
+    const myProductButton = document.createElement("button");
+    myProductButton.innerHTML = "Shop"
+    myProductButton.id='product-button';
+
     myProduct.appendChild(myProductTitle);
     myProduct.appendChild(myProductImage);
     myProduct.appendChild(myProductDescription);
     myProduct.appendChild(myProductPrice);
+    myProduct.appendChild(myProductButton);
     DOMproducts.appendChild(myProduct)
 }
 
@@ -110,9 +123,19 @@ function printExclusive(item) {
     myProductPrice.innerText = item.price + divisa;
     myProductPrice.id = 'product-price';
 
+    const myProductButton = document.createElement("button");
+    myProductButton.innerHTML = "Shop"
+    myProductButton.id='product-button';
+
     myProduct.appendChild(myProductTitle);
     myProduct.appendChild(myProductImage);
     myProduct.appendChild(myProductDescription);
     myProduct.appendChild(myProductPrice);
+    myProduct.appendChild(myProductButton);
     DOMexclusive.appendChild(myProduct)
 }
+
+let carrito
+
+addEventListener(click)
+carrito.push
