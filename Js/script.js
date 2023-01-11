@@ -1,4 +1,4 @@
-let carrito = [];
+let cart = [];
 const divisa = '€';
 const DOMnew = document.querySelector('#new');
 const DOMproducts = document.querySelector('#products');
@@ -148,8 +148,12 @@ function printExclusive(item) {
 
 
 function shoppingButton(event) {
-     
-    localStorage.setItem('cart',JSON.stringify(products[event.target.getAttribute('marker')]))
+      
+    
+    let storage = products[event.target.getAttribute('marker')]
+    cart.push(storage)
+    localStorage.setItem('cart',JSON.stringify(cart))
+    console.info(cart)
 }
 
 
