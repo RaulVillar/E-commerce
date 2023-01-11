@@ -16,7 +16,7 @@ function printCart(){
                 <img src="${item.image}">
                 <div>
                     <h5>${item.name}</h5>
-                    <button>borrar</button>
+                    <button onclick = deleteitem(${item.id}) >borrar</button>
                 </div>
                 <div>
                     <button>-</button>
@@ -39,3 +39,7 @@ printCart()
 
 
 
+const  deleteitem = () =>{
+    localStorage.removeItem("cart",'marker');
+    console.info("has borrado un elemento del local storage")
+}
