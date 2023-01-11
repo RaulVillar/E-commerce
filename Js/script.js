@@ -5,6 +5,7 @@ const DOMproducts = document.querySelector('#products');
 const DOMexclusive = document.querySelector('#exclusive');
 
 
+
 function renderNew() {
 
     var news = products.filter(item => item.category == "New");
@@ -26,9 +27,6 @@ function renderExclusive() {
 
 }
 
-renderNew()
-renderProducts()
-renderExclusive()
 
 function printNew(item) {
 
@@ -55,8 +53,9 @@ function printNew(item) {
     const myProductButton = document.createElement("button");
     myProductButton.innerHTML = "Shop"
     myProductButton.id = 'product-button';
-    myProductButton.setAttribute('marker', item);
+    myProductButton.setAttribute('marker', item.id);
     myProductButton.addEventListener('click', shoppingButton);
+
 
     myProduct.appendChild(myProductTitle);
     myProduct.appendChild(myProductImage);
@@ -92,8 +91,9 @@ function printProduct(item) {
     const myProductButton = document.createElement("button");
     myProductButton.innerHTML = "Shop"
     myProductButton.id = 'product-button';
-    myProductButton.setAttribute('marker', item);
+    myProductButton.setAttribute('marker', item.id);
     myProductButton.addEventListener('click', shoppingButton);
+
 
     myProduct.appendChild(myProductTitle);
     myProduct.appendChild(myProductImage);
@@ -129,9 +129,10 @@ function printExclusive(item) {
     const myProductButton = document.createElement("button");
     myProductButton.innerHTML = "Shop"
     myProductButton.id = 'product-button';
-    myProductButton.setAttribute('marker', item);
+    myProductButton.setAttribute('marker', item.id);
     myProductButton.addEventListener('click', shoppingButton);
 
+    
     myProduct.appendChild(myProductTitle);
     myProduct.appendChild(myProductImage);
     myProduct.appendChild(myProductDescription);
@@ -147,17 +148,21 @@ function printExclusive(item) {
 
 
 
+
 function shoppingButton(event) {
 
-var shoppingProduct = {}
+    let storage = products[event.target.getAttribute('marker')];
+    
+    cart.push(storage)
 
-shoppingProduct.id = `${event.id}`
-shoppingProduct.image = `${event.image}`
-shoppingProduct.name = `${event.name}`
-shoppingProduct.price = `${event.price}`
-
-console.info (shoppingProduct)
-    carrito.push (shoppingProduct)
-    // carrito.push(event.target.getAttribute('marker'));
-    console.info (carrito);
+    localStorage.setItem('cart', JSON.stringify(cart))
+    
+    console.info(cart)
 }
+
+
+
+renderNew()
+renderProducts()
+renderExclusive()
+

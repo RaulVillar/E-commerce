@@ -1,6 +1,6 @@
 const products = [
     {
-        id: 1,
+        id: 0,
         name: "Refresco de Sailor Moon",
         price: 1.50,
         description: "Un producto la mar de refrescante, sabor a pomelo y con la grandiosa Sailor Moon como protagonista.",
@@ -9,7 +9,7 @@ const products = [
         quantity: 0
     },
     {
-        id: 2,
+        id: 1,
         name: "Bebida de cafe Asahi Wonda Premium",
         price: 1.50,
         description: "El cafe de la marca Asahi, fabricado por japoneses y para japoneses, es un producto exclusivo.",
@@ -18,7 +18,7 @@ const products = [
         quantity: 0
     },
     {
-        id: 3,
+        id: 2,
         name: "Bombones de chocolate",
         price: 3,
         description: "Una explosion de sabor inigualable, un producto exquisito fabricado por los más expertos chocolateros nipones.",
@@ -27,7 +27,7 @@ const products = [
         quantity: 0
     },
     {
-        id: 4,
+        id: 3,
         name: "Chicles de melocoton One Piece",
         price: 2.50,
         description: "Chicles sabor melocoton, no te concederan poderes, pero estan riquisimos.",
@@ -36,7 +36,7 @@ const products = [
         quantity: 0
     },
     {
-        id: 6,
+        id: 4,
         name: "Fideos Ramen Naruto",
         price: 2,
         description: "Una bolsita de fideos, sabor a pollo, con los ingredientes preferidos de nuestro amado Naruto.",
@@ -45,7 +45,7 @@ const products = [
         quantity: 0
     },
     {
-        id: 7,
+        id: 5,
         name: "Puzle de Sanrio",
         price: 6,
         description: "El puzle de Sanrio no es comestible, pero es adorable y muy entretenido de montar.",
@@ -54,7 +54,7 @@ const products = [
         quantity: 0 
     },
     {
-        id: 8,
+        id: 6,
         name: "Galleta Pokemon",
         price: 3,
         description: "Una adorable galletita con un pokemon sorpresa. Hay mas de 20 misteriosos pokemons por comer!",
@@ -63,7 +63,7 @@ const products = [
         quantity: 0
     },
     {
-        id: 9,
+        id: 7,
         name: "Ramen Chikin",
         price: 3,
         description: "Como lo escuchas, un ramen sabor a pizza cuatro quesos procedente de la famosa marca Chikin.",
@@ -72,7 +72,7 @@ const products = [
         quantity: 0
     },
     {
-        id: 10,
+        id: 8,
         name: "Salsa de curry de Sinchan",
         price: 3.20,
         description: "Esta salsa de curry, con cerdo y maiz, que por suerte no ha cocinado Sinchan, es suave al paladar y muy nutritiva.",
@@ -81,7 +81,7 @@ const products = [
         quantity: 0
     },
     {
-        id: 11,
+        id: 9,
         name: "Salsa de curry de Doraemon",
         price: 3.20,
         description: "Una salsa de curry, con cerdo, verduras y queso, que se ha sacado Doraemon del bolsillo magico.",
@@ -90,7 +90,7 @@ const products = [
         quantity: 0
     },
     {
-        id: 12,
+        id: 10,
         name: "Sopa de maiz de Pokemon",
         price: 1.75,
         description: "Nutritiva sopita de maiz con tematica de Pokemon. *No incluye trazas de pokemons",
@@ -99,7 +99,7 @@ const products = [
         quantity: 0
     },
     {
-        id: 13,
+        id: 11,
         name: "Cebada japonesa limitada Rilakkum",
         price: 5,
         description: "Una imperial cebada nipona, limitada y exclusiva, del osito Rilakkum",
