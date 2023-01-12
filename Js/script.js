@@ -132,7 +132,7 @@ function printExclusive(item) {
     myProductButton.setAttribute('marker', item.id);
     myProductButton.addEventListener('click', shoppingButton);
 
-    
+
     myProduct.appendChild(myProductTitle);
     myProduct.appendChild(myProductImage);
     myProduct.appendChild(myProductDescription);
@@ -142,17 +142,13 @@ function printExclusive(item) {
 }
 
 function shoppingButton(event) {
- 
 
     let des = event.target.getAttribute('marker')
-    //console.info(des)
     let storage = products[des];
-
     const exist = cart.some(product => product.id === storage.id);
-
-    if (exist){ 
+    if (exist) {
         const pro = cart.map(product => {
-            if(product.id === storage.id){
+            if (product.id === storage.id) {
                 product.quantity++;
                 return product;
             } else {
@@ -160,24 +156,14 @@ function shoppingButton(event) {
             }
         });
         cart = [...pro]
-        //cart.push(pro)
-
-    }else {
+    } else {
         cart.push(storage)
     }
-
-        //console.info(products.find(element => element.id = 5))
-    
-    //cart.push(pro)
-
     localStorage.setItem('cart', JSON.stringify(cart))
-    
-    console.info(cart)
+
+
 }
-
-
-
-
+ 
 renderNew()
 renderProducts()
 renderExclusive()

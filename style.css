@@ -27,6 +27,7 @@ header {
     background-color: black;
     letter-spacing: 1vh;
     position: fixed;
+    z-index: 1;
 }
 
 ul {
