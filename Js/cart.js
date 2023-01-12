@@ -1,11 +1,14 @@
 let cart = JSON.parse(localStorage.getItem('cart')) || []
+let totalItem = totalItem2();
 const DOMcart = document.querySelector('.main-cart');
 
 const DOMbuttonDeleteCart = document.querySelector('.deleteCart');
 
 DOMbuttonDeleteCart.addEventListener('click', clearCart)
 
+const DOMtotalItem = document.querySelectorAll('.totalItem')
 
+DOMtotalItem.innerHTML += totalItem;
 
 function printCart(){
     DOMcart.innerHTML = ''
@@ -37,10 +40,15 @@ function printCart(){
     })
 }
 
+function reloadCart (){
+    cart = JSON.parse(localStorage.getItem('cart'))
+}
+
 function clearCart () {
     localStorage.clear()
-    cart = JSON.parse(localStorage.getItem('cart'))
+    reloadCart ()
     printCart()
+    totalItem2()
 }
 printCart()
 
@@ -50,20 +58,44 @@ deletebutton.forEach (boton => {
     boton.addEventListener("click", deleteProduct)
 })
 
+DOMtotalItem.forEach (boton => {
+    boton.innerHTML += totalItem2()
+})
+
 function deleteProduct(event){
 
-    
     const productId = event.target.dataset.id; 
     console.info(productId)
     cart = cart.filter(prd => prd.id.toString() !== productId.toString());
     localStorage.setItem('cart',JSON.stringify(cart));
     printCart();
     location.reload()
-    
-
-}
-
-function totalItem {
+    totalItem2()
     
 }
 
+
+function totalItem2 (){
+    let sumatorio = 0 ;
+    cart.forEach (item => {
+        sumatorio += item.quantity
+    });
+    console.info(sumatorio)
+    return sumatorio
+};
+
+
+function totalCart() {
+    var total = 0;
+
+    for (let i = 0; i < cart.length; i++) {
+        total += cart[i].quantity * cart[i].price;
+    }
+    return total;
+}
+
+console.info(totalCart());
+
+const total = document.querySelector('#total');
+
+total.innerHTML += totalCart() + '€';

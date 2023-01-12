@@ -4,6 +4,10 @@ const DOMproducts = document.querySelector('#products');
 const DOMexclusive = document.querySelector('#exclusive');
 
 
+//DOMtotalItemindex = document.querySelectorAll('.totalItem')
+
+
+
 
 
 function renderNew() {
@@ -174,13 +178,16 @@ function shoppingButton(event) {
     localStorage.setItem('cart', JSON.stringify(cart))
     
     console.info(cart)
+    totalItem2()
 }
 
 
-
+//DOMtotalItemindex.innerHTML += totalItem;
 
 renderNew()
 renderProducts()
 renderExclusive()
+//totalItem2 ()
+
 
 
