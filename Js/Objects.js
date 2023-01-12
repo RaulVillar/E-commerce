@@ -107,5 +107,5 @@ const products = [
         category: "Exclusive",
         quantity: 0
     },
-   
+
 ]

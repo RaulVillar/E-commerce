@@ -1,8 +1,8 @@
-let carrito = [];
 const divisa = '€';
 const DOMnew = document.querySelector('#new');
 const DOMproducts = document.querySelector('#products');
 const DOMexclusive = document.querySelector('#exclusive');
+
 
 
 
@@ -143,15 +143,13 @@ function printExclusive(item) {
 
 
 
-
-
-
-
-
-
 function shoppingButton(event) {
 
-    let storage = products[event.target.getAttribute('marker')];
+    let des = event.target.getAttribute('marker')
+    console.info(des)
+    let storage = products[des];
+
+        console.info(products.find(element => element.id = des))
     
     cart.push(storage)
 
@@ -162,7 +160,9 @@ function shoppingButton(event) {
 
 
 
+
 renderNew()
 renderProducts()
 renderExclusive()
+
 

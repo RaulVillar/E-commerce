@@ -1,22 +1,23 @@
-
-
 let cart = JSON.parse(localStorage.getItem('cart')) || []
-
-console.info(cart)
-
-
 const DOMcart = document.querySelector('.main-cart');
 
-function printCart(){
+const DOMbuttonDeleteCart = document.querySelector('.deleteCart');
 
+DOMbuttonDeleteCart.addEventListener('click', clearCart)
+
+
+
+function printCart(){
+    DOMcart.innerHTML = ''
     cart.forEach((item) => {
-            let print = document.createElement('div');
+            
+            let print = document.createElement('div'); 
             print.innerHTML = `
             <div class="itemCart" style="height: 15vh;">
                 <img src="${item.image}">
                 <div>
                     <h5>${item.name}</h5>
-                    <button>borrar</button>
+                    <button onclick=deleteitem(${item.id})>borrar</button>
                 </div>
                 <div>
                     <button>-</button>
@@ -37,5 +38,8 @@ function printCart(){
 }
 printCart()
 
-
-
+function clearCart () {
+    localStorage.clear()
+    cart = JSON.parse(localStorage.getItem('cart'))
+    printCart()
+}
