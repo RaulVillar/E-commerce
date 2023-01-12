@@ -1,8 +1,8 @@
-
 const divisa = '€';
 const DOMnew = document.querySelector('#new');
 const DOMproducts = document.querySelector('#products');
 const DOMexclusive = document.querySelector('#exclusive');
+
 
 
 
@@ -145,29 +145,36 @@ function shoppingButton(event) {
     let des =event.target.getAttribute('marker')
     let storage = products[des];
 
+    let des = event.target.getAttribute('marker')
+    //console.info(des)
+    let storage = products[des];
+
     const exist = cart.some(product => product.id === storage.id);
 
-    if (exist){
+    if (exist){ 
         const pro = cart.map(product => {
             if(product.id === storage.id){
                 product.quantity++;
                 return product;
-            }else{
+            } else {
                 return product
             }
         });
         cart = [...pro]
-    }else{
+        //cart.push(pro)
+
+    }else {
         cart.push(storage)
     }
 
+        //console.info(products.find(element => element.id = 5))
+    
+    //cart.push(pro)
+
+    localStorage.setItem('cart', JSON.stringify(cart))
+    
+    console.info(cart)
 }
-
-
-
-
-
-
 
 
 
@@ -175,4 +182,5 @@ function shoppingButton(event) {
 renderNew()
 renderProducts()
 renderExclusive()
+
 

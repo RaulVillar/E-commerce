@@ -1,29 +1,27 @@
-
-
 let cart = JSON.parse(localStorage.getItem('cart')) || []
 const DOMcart = document.querySelector('.main-cart');
-console.info(cart)
 
-// function noRepit(){
-    
+const DOMbuttonDeleteCart = document.querySelector('.deleteCart');
 
-// }
+DOMbuttonDeleteCart.addEventListener('click', clearCart)
+
 
 
 function printCart(){
-
-        cart.forEach((item) => {
-            let print = document.createElement('div');
+    DOMcart.innerHTML = ''
+    cart.forEach((item) => {
+            
+            let print = document.createElement('div'); 
             print.innerHTML = `
-            <div class="itemCart" style="height: 15vh;">
+            <div class="itemCart" style="height: 10vh;">
                 <img src="${item.image}">
                 <div>
                     <h5>${item.name}</h5>
-                    <button>borrar</button>
+                    <button id="delete-button" data-id="${item.id}">borrar</button>
                 </div>
                 <div>
                     <button>-</button>
-                    <p>cantidad</p>
+                    <p>${item.quantity}</p>
                     <button>+</button>
                 </div>
                 <div>
@@ -46,17 +44,22 @@ const  clearItem = () =>{
     location.reload();
 }
 
-// function carritoTotal(){
-//     let Total = 0;
-//     const itemCartTotal = document.querySelector('.itemCartTotal')
-//     carrito.forEach((item) => {
-//       const precio = Number(`${item.price}`.replace("$", ''))
-//       Total = Total + precio*item.cantidad
-//       console.info(Total)
-//     })
-// }
-
+function clearCart () {
+    localStorage.clear()
+    cart = JSON.parse(localStorage.getItem('cart'))
+    printCart()
+}
 printCart()
-// carritoTotal()
+
+
+
+}
+
+function totalItem {
+    
+}
+
+
+
 
 
