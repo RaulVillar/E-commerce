@@ -146,12 +146,30 @@ function printExclusive(item) {
 function shoppingButton(event) {
 
     let des = event.target.getAttribute('marker')
-    console.info(des)
+    //console.info(des)
     let storage = products[des];
 
-        console.info(products.find(element => element.id = des))
+    const exist = cart.some(product => product.id === storage.id);
+
+    if (exist){ 
+        const pro = cart.map(product => {
+            if(product.id === storage.id){
+                product.quantity++;
+                return product;
+            } else {
+                return product
+            }
+        });
+        cart = [...pro]
+        //cart.push(pro)
+
+    }else {
+        cart.push(storage)
+    }
+
+        //console.info(products.find(element => element.id = 5))
     
-    cart.push(storage)
+    //cart.push(pro)
 
     localStorage.setItem('cart', JSON.stringify(cart))
     

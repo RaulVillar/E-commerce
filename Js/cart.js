@@ -13,15 +13,15 @@ function printCart(){
             
             let print = document.createElement('div'); 
             print.innerHTML = `
-            <div class="itemCart" style="height: 15vh;">
+            <div class="itemCart" style="height: 10vh;">
                 <img src="${item.image}">
                 <div>
                     <h5>${item.name}</h5>
-                    <button onclick=deleteitem(${item.id})>borrar</button>
+                    <button id="delete-button" data-id="${item.id}">borrar</button>
                 </div>
                 <div>
                     <button>-</button>
-                    <p>cantidad</p>
+                    <p>${item.quantity}</p>
                     <button>+</button>
                 </div>
                 <div>
@@ -36,10 +36,34 @@ function printCart(){
         DOMcart.append(print);
     })
 }
-printCart()
 
 function clearCart () {
     localStorage.clear()
     cart = JSON.parse(localStorage.getItem('cart'))
     printCart()
 }
+printCart()
+
+const deletebutton = document.querySelectorAll('#delete-button')
+
+deletebutton.forEach (boton => {
+    boton.addEventListener("click", deleteProduct)
+})
+
+function deleteProduct(event){
+
+    
+    const productId = event.target.dataset.id; 
+    console.info(productId)
+    cart = cart.filter(prd => prd.id.toString() !== productId.toString());
+    localStorage.setItem('cart',JSON.stringify(cart));
+    printCart();
+    location.reload()
+    
+
+}
+
+function totalItem {
+    
+}
+
