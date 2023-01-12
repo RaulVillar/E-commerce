@@ -142,8 +142,7 @@ function printExclusive(item) {
 }
 
 function shoppingButton(event) {
-    let des =event.target.getAttribute('marker')
-    let storage = products[des];
+ 
 
     let des = event.target.getAttribute('marker')
     //console.info(des)
