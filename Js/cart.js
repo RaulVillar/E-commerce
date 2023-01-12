@@ -3,11 +3,9 @@ let totalItem = totalItem2();
 const DOMcart = document.querySelector('.main-cart');
 const DOMbuttonDeleteCart = document.querySelector('.deleteCart');
 const total = document.querySelector('#total');
-total.innerHTML += totalCart() +'€';
+const DOMtotalItem = document.querySelectorAll('.totalItem')
 
 DOMbuttonDeleteCart.addEventListener('click', clearCart)
-
-const DOMtotalItem = document.querySelectorAll('.totalItem')
 
 DOMtotalItem.innerHTML += totalItem;
 
@@ -42,17 +40,14 @@ function printCart() {
 
 }
 
-function reloadCart (){
+
+function reloadCart() {
     cart = JSON.parse(localStorage.getItem('cart'))
 }
 
-function reloadCart (){
-    cart = JSON.parse(localStorage.getItem('cart'))
-}
-
-function clearCart () {
+function clearCart() {
     localStorage.clear()
-    reloadCart ()
+    reloadCart()
     printCart()
     totalItem2()
 }
@@ -64,26 +59,26 @@ deletebutton.forEach(boton => {
     boton.addEventListener("click", deleteProduct)
 })
 
-DOMtotalItem.forEach (boton => {
+DOMtotalItem.forEach(boton => {
     boton.innerHTML += totalItem2()
 })
 
-function deleteProduct(event){
+function deleteProduct(event) {
 
-    const productId = event.target.dataset.id; 
+    const productId = event.target.dataset.id;
     console.info(productId)
     cart = cart.filter(prd => prd.id.toString() !== productId.toString());
     localStorage.setItem('cart', JSON.stringify(cart));
     printCart();
     location.reload()
     totalItem2()
-    
+
 }
 
 
-function totalItem2 (){
-    let sumatorio = 0 ;
-    cart.forEach (item => {
+function totalItem2() {
+    let sumatorio = 0;
+    cart.forEach(item => {
         sumatorio += item.quantity
     });
     console.info(sumatorio)
@@ -93,15 +88,15 @@ function totalItem2 (){
 
 function totalCart() {
     var total = 0;
-
     for (let i = 0; i < cart.length; i++) {
         total += cart[i].quantity * cart[i].price;
     }
     return total;
 }
+total.innerHTML += totalCart() + '€';
 
 console.info(totalCart());
 
 
 
-total.innerHTML += totalCart() + '€';
+// total.innerHTML += totalCart() + '€';

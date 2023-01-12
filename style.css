@@ -6,14 +6,14 @@
 }
 
 @font-face {
-            font-family: "Harlow";
-            src: url("/Fonts/HelveticaNeueCyrBold.ttf");
-        }
+    font-family: "Harlow";
+    src: url("/Fonts/HelveticaNeueCyrBold.ttf");
+}
 
 @font-face {
-            font-family: "Harlowlight";
-            src: url("/Fonts/HelveticaNeueCyr-Light.ttf");
-        }
+    font-family: "Harlowlight";
+    src: url("/Fonts/HelveticaNeueCyr-Light.ttf");
+}
 
 body {
     width: 100vw;
@@ -178,11 +178,24 @@ footer {
     height: 80vh;
 }
 
-a{
+a {
     text-decoration: none;
-    color:white
+    color: white
 }
 
+#totalCart {
+    width: 3vh;
+    height: 3vh;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(244, 248, 248, 0.966);
+    position:relative;
+    top: -3vh; left: 4vh;
+}
 
 
 /********************************
@@ -194,10 +207,12 @@ a{
     text-align: center;
     padding-bottom: 10vh;
 }
+
 .total-cart {
     width: 30vw;
     text-align: center;
 }
+
 .body-cart {
     display: flex;
     justify-content: center;
@@ -207,6 +222,6 @@ a{
     display: flex;
 }
 
-.body-cart{
-    scroll-margin:initial;
+.body-cart {
+    scroll-margin: initial;
 }

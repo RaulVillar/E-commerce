@@ -4,7 +4,7 @@ const DOMproducts = document.querySelector('#products');
 const DOMexclusive = document.querySelector('#exclusive');
 
 
-//DOMtotalItemindex = document.querySelectorAll('.totalItem')
+DOMtotalItemindex = document.querySelectorAll('.totalItem')
 
 
 
@@ -164,7 +164,7 @@ function shoppingButton(event) {
         cart.push(storage)
     }
     localStorage.setItem('cart', JSON.stringify(cart))
-    
+    location.reload()
     console.info(cart)
     totalItem2()
 }
