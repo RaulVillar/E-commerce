@@ -1,22 +1,25 @@
 
 
 let cart = JSON.parse(localStorage.getItem('cart')) || []
-
+const DOMcart = document.querySelector('.main-cart');
 console.info(cart)
 
+// function noRepit(){
+    
 
-const DOMcart = document.querySelector('.main-cart');
+// }
+
 
 function printCart(){
 
-    cart.forEach((item) => {
+        cart.forEach((item) => {
             let print = document.createElement('div');
             print.innerHTML = `
             <div class="itemCart" style="height: 15vh;">
                 <img src="${item.image}">
                 <div>
                     <h5>${item.name}</h5>
-                    <button onclick = deleteitem(${item.id}) >borrar</button>
+                    <button>borrar</button>
                 </div>
                 <div>
                     <button>-</button>
@@ -34,12 +37,26 @@ function printCart(){
         
         DOMcart.append(print);
     })
+    
 }
-printCart()
 
-
-
-const  deleteitem = () =>{
-    localStorage.removeItem("cart",'marker');
+const  clearItem = () =>{
+    localStorage.clear("cart");
     console.info("has borrado un elemento del local storage")
+    location.reload();
 }
+
+// function carritoTotal(){
+//     let Total = 0;
+//     const itemCartTotal = document.querySelector('.itemCartTotal')
+//     carrito.forEach((item) => {
+//       const precio = Number(`${item.price}`.replace("$", ''))
+//       Total = Total + precio*item.cantidad
+//       console.info(Total)
+//     })
+// }
+
+printCart()
+// carritoTotal()
+
+

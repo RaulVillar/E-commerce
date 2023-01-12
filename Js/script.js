@@ -141,20 +141,35 @@ function printExclusive(item) {
     DOMexclusive.appendChild(myProduct);
 }
 
-
-
-
-
-
-
-
-
 function shoppingButton(event) {
-    let storage = products[event.target.getAttribute('marker')]
-    cart.push(storage)
-    localStorage.setItem('cart',JSON.stringify(cart))
-    console.info(cart)
+    let des =event.target.getAttribute('marker')
+    let storage = products[des];
+
+    const exist = cart.some(product => product.id === storage.id);
+
+    if (exist){
+        const pro = cart.map(product => {
+            if(product.id === storage.id){
+                product.quantity++;
+                return product;
+            }else{
+                return product
+            }
+        });
+        cart = [...pro]
+    }else{
+        cart.push(storage)
+    }
+
 }
+
+
+
+
+
+
+
+
 
 
 renderNew()

@@ -159,7 +159,7 @@ h1 {
 footer {
     background-color: rgb(0, 0, 0);
     margin-bottom: 0;
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
     height: 10vh;
@@ -203,4 +203,8 @@ a{
 
 .itemCart {
     display: flex;
+}
+
+.body-cart{
+    scroll-margin:initial;
 }
