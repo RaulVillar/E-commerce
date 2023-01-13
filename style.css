@@ -224,3 +224,62 @@ a {
     padding: 0;
 }
 
+.subtract, .add{
+    font-family: "Harlow";
+    text-align: center;
+    margin-top: 1vh;
+    border-color: black;
+    background-color: white;
+    padding-top: 0.3vh;
+    padding-bottom: 0.3vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    margin-right: 2vh;
+    margin-left: 2vh;
+}
+#delete-button{
+    font-family: "Harlow";
+    text-align: center;
+    margin-top: 1vh;
+    border-color: black;
+    background-color: white;
+    padding-top: 0.3vh;
+    padding-bottom: 0.3vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
+}
+.subtract:hover, .add:hover, #delete-button:hover, .deleteCart:hover, #tramitarPedido:hover{
+    background-color: blueviolet;
+    cursor: pointer;
+    
+}
+
+.deleteCart, #tramitarPedido{
+    font-family: "Harlow";
+    text-align: center;
+    margin-top: 1vh;
+    border-color: black;
+    background-color: white;
+    padding-top: 0.3vh;
+    padding-bottom: 0.3vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+    
+}
+
+.total-cart{
+   
+    background-color: rgba(214, 214, 214, 0.464);
+}
+
+.totalItem, #total{
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+}
+
+h2{
+    margin-top: 1vh;
+    text-decoration: underline;
+}
