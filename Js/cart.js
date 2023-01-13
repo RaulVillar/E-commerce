@@ -32,9 +32,9 @@ function printCart() {
                 <p>${item.price}€</p>
                 </td>
                 <td class="itemQuantity">
-                    <button class="subtrack" data-id="${item.id}"data-type="subtrack">-</button>
+                    <button class= "subtract" data-id= "${item.id}" data-type= "subtract">-</button>
                     <p>${item.quantity}</p>
-                    <button class=".add" data-id="${item.id}" data-type=".add">+</button>
+                    <button class= "add" data-id= "${item.id}" data-type= "add">+</button>
                 </td>
                 <td>
                     <p>${totalProduct} €</p>
@@ -47,12 +47,9 @@ function printCart() {
     }
 }
 
-
 function reloadCart() {
     cart = JSON.parse(localStorage.getItem('cart'))
 }
-
-printCart()
 
 function clearCart() {
     localStorage.clear()
@@ -115,9 +112,11 @@ function totalCart() {
 
 total.innerHTML += totalCart() + '€';
 
+
 function addAndDelete(event) {
-    const productId = event.target.dataset.id;
-    const order = event.target.dataset.type;
+    const productId = event.target.dataset.id
+    const order = event.target.dataset.type
+
     if (order == "add") {
         cart.forEach(item => {
             if (item.id == productId) {
@@ -125,27 +124,23 @@ function addAndDelete(event) {
             }
         })
     }
-    if (order == "subtrack") {
+    if (order == "subtract") {
         cart.forEach(item => {
-            if (item.id == productId) {
-                item.quantity--
-                if (item.quantity == 0) {
-                    deleteProduct(event)
-                }
-            }
+            if (item.id == productId) {item.quantity-- }
+            if (item.quantity == 0) {deleteProduct(event) }
         })
     }
+
     localStorage.setItem('cart', JSON.stringify(cart))
     location.reload()
+
 }
-const subtract = document.querySelectorAll(".subtrack")
 const add = document.querySelectorAll(".add")
+const subtract = document.querySelectorAll(".subtract")
 
-add.forEach(boton => {
-    boton.addEventListener("click", addAndDelete)
+add.forEach(button => {
+    button.addEventListener("click", addAndDelete)
 })
-
-
-subtract.forEach(boton => {
-    boton.addEventListener("click", addAndDelete)
+subtract.forEach(button => {
+    button.addEventListener("click", addAndDelete)
 })

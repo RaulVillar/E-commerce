@@ -6,14 +6,14 @@
 }
 
 @font-face {
-    font-family: "Harlow";
-    src: url("/Fonts/HelveticaNeueCyrBold.ttf");
-}
+            font-family: "Harlow";
+            src: url("/Fonts/HelveticaNeueCyrBold.ttf");
+        }
 
 @font-face {
-    font-family: "Harlowlight";
-    src: url("/Fonts/HelveticaNeueCyr-Light.ttf");
-}
+            font-family: "Harlowlight";
+            src: url("/Fonts/HelveticaNeueCyr-Light.ttf");
+        }
 
 body {
     width: 100vw;
@@ -76,22 +76,23 @@ h1 {
 }
 
 .title-new {
-    background-image: url(/imagenes/Novedades.png);
+    background-image: url(./imagenes/Novedades.png);
     background-size: cover;
 }
 
 .title-products {
-    background-image: url(/imagenes/Novedades.jpg);
+    background-image: url(./imagenes/Novedades.jpg);
     background-size: cover;
 }
 
 .title-exclusive {
-    background-image: url(/imagenes/samurai-japan-japanese-digital-art-artwork-hd-wallpaper-d33e540c52f0c77ca182734d8eb51838.jpg);
+    background-image: url(./imagenes/samurai-japan-japanese-digital-art-artwork-hd-wallpaper-d33e540c52f0c77ca182734d8eb51838.jpg);
     background-size: cover;
 }
 
 .container {
     margin-top: -3vh;
+    margin-bottom: 8vh;
 }
 
 #new,
