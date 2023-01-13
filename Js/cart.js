@@ -22,7 +22,7 @@ function printCart() {
                     <button id="delete-button" data-id="${item.id}">borrar</button>
                 </div>
                 <div>
-                    <button>-</button>
+                    <button id="deleteItem" >-</button>
                     <p>${item.quantity}</p>
                     <button>+</button>
                 </div>
@@ -34,8 +34,8 @@ function printCart() {
                 </div>
             </div>
             `;
-
-        DOMcart.append(print);
+            
+            DOMcart.append(print);
     })
 
 }
@@ -45,18 +45,23 @@ function reloadCart() {
     cart = JSON.parse(localStorage.getItem('cart'))
 }
 
+printCart()
+
 function clearCart() {
     localStorage.clear()
     reloadCart()
     printCart()
     totalItem2()
 }
-printCart()
-
 const deletebutton = document.querySelectorAll('#delete-button')
+const deleteItem = document.querySelectorAll('#deleteItem')
 
 deletebutton.forEach(boton => {
     boton.addEventListener("click", deleteProduct)
+})
+
+deletebutton.forEach(boton => {
+    boton.addEventListener("click",deleteItem)
 })
 
 DOMtotalItem.forEach(boton => {
@@ -64,7 +69,7 @@ DOMtotalItem.forEach(boton => {
 })
 
 function deleteProduct(event) {
-
+    
     const productId = event.target.dataset.id;
     console.info(productId)
     cart = cart.filter(prd => prd.id.toString() !== productId.toString());
@@ -93,10 +98,29 @@ function totalCart() {
     }
     return total;
 }
+
+function totalECart(){
+    let sumatorio = 0;
+    cart.forEach(item => {
+        sumatorio += item.price
+    });
+    console.info(sumatorio)
+    return sumatorio
+}
+
 total.innerHTML += totalCart() + '€';
 
 console.info(totalCart());
 
 
+// function deleteItem(event){
+//     const productId = event.target.dataset.id;
+//     console.info(productId)
+//     cart = cart.filter(prd => prd.id.toString() !== productId.toString());
+//     localStorage.setItem('cart', JSON.stringify(cart));
+//     printCart();
+//     location.reload()
+//     totalItem2()
 
-// total.innerHTML += totalCart() + '€';
+// }
+
