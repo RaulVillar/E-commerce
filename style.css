@@ -202,7 +202,7 @@ a{
     padding-bottom: 10vh;
 }
 .total-cart {
-    width: 30vw;
+    width: 20vw;
     text-align: center;
 }
 .body-cart {
@@ -210,6 +210,10 @@ a{
     justify-content: center;
 }
 
-.itemCart {
+.itemQuantity {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 18vh;
+    padding: 0;
 }

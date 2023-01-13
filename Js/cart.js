@@ -6,38 +6,42 @@ const DOMbuttonDeleteCart = document.querySelector('.deleteCart');
 
 DOMbuttonDeleteCart.addEventListener('click', clearCart)
 
-const DOMtotalItem = document.querySelectorAll('.totalItem')
+//const DOMtotalItem = document.querySelectorAll('.totalItem')
 
 //DOMtotalItem.innerHTML += totalItem;
 
 function printCart(){
-    DOMcart.innerHTML = ''
+    
     if (cart !== null){
     cart.forEach((item) => {
             
-            let print = document.createElement('div'); 
+        var totalProduct = item.quantity*item.price;
+
+            let print = document.createElement('tr'); 
+            
             print.innerHTML = `
-            <div class="itemCart" style="height: 10vh;">
-                <img src="${item.image}">
-                <div>
+                <td style= "height: 15vh">
+                    <img src="${item.image}" style="height: 100%">
+                </td>
+                <td>
                     <h5>${item.name}</h5>
                     <button id="delete-button" data-id="${item.id}">borrar</button>
-                </div>
-                <div>
+                </td>
+                <td>
+                <p>${item.price}€</p>
+                </td>
+                <td class="itemQuantity">
                     <button>-</button>
                     <p>${item.quantity}</p>
                     <button>+</button>
-                </div>
-                <div>
-                    <p>${item.price}€</p>
-                </div>
-                <div>
-                    <p>total €</p>
-                </div>
-            </div>
+                </td>
+                <td>
+                    <p>${totalProduct} €</p>
+                </td>
+            
             `;
         
-        DOMcart.append(print);
+        DOMcart.appendChild(print);
     })
     }
 }
@@ -62,9 +66,9 @@ deletebutton.forEach (boton => {
     boton.addEventListener("click", deleteProduct)
 })
 
-DOMtotalItem.forEach (boton => {
-    boton.innerHTML += totalItem2()
-})
+// DOMtotalItem.forEach (boton => {
+//     boton.innerHTML += totalItem2()
+// })
 
 function deleteProduct(event){
 
@@ -102,7 +106,7 @@ function totalCart() {
     return total;
 }
 
-console.info(totalCart());
+
 
 const total = document.querySelector('#total');
 
