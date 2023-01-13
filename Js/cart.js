@@ -32,7 +32,7 @@ function printCart(){
                     <p>${item.price}€</p>
                 </div>
                 <div>
-                    <p>total €</p>
+                    <p id="totalProduct">total €</p>
                 </div>
             </div>
             `;
@@ -107,3 +107,4 @@ console.info(totalCart());
 const total = document.querySelector('#total');
 
 total.innerHTML += totalCart() + '€';
+
