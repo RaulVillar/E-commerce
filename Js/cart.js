@@ -7,37 +7,44 @@ const DOMtotalItem = document.querySelectorAll('.totalItem')
 
 DOMbuttonDeleteCart.addEventListener('click', clearCart)
 
-DOMtotalItem.innerHTML += totalItem;
+//const DOMtotalItem = document.querySelectorAll('.totalItem')
 
-function printCart() {
-    DOMcart.innerHTML = ''
+//DOMtotalItem.innerHTML += totalItem;
+
+function printCart(){
+    
+    if (cart !== null){
     cart.forEach((item) => {
+            
+        var totalProduct = item.quantity*item.price;
 
-        let print = document.createElement('div');
-        print.innerHTML = `
-            <div class="itemCart" style="height: 10vh;">
-                <img src="${item.image}">
-                <div>
+            let print = document.createElement('tr'); 
+            
+            print.innerHTML = `
+                <td style= "height: 15vh">
+                    <img src="${item.image}" style="height: 100%">
+                </td>
+                <td>
                     <h5>${item.name}</h5>
                     <button id="delete-button" data-id="${item.id}">borrar</button>
-                </div>
-                <div>
-                    <button id="deleteItem" >-</button>
+                </td>
+                <td>
+                <p>${item.price}€</p>
+                </td>
+                <td class="itemQuantity">
+                    <button>-</button>
                     <p>${item.quantity}</p>
                     <button>+</button>
-                </div>
-                <div>
-                    <p>${item.price}€</p>
-                </div>
-                <div>
-                    <p>total €</p>
-                </div>
-            </div>
-            `;
+                </td>
+                <td>
+                    <p>${totalProduct} €</p>
+                </td>
             
-            DOMcart.append(print);
+            `;
+        
+        DOMcart.appendChild(print);
     })
-
+    }
 }
 
 
@@ -52,6 +59,8 @@ function clearCart() {
     reloadCart()
     printCart()
     totalItem2()
+    totalCart()
+    location.reload()
 }
 const deletebutton = document.querySelectorAll('#delete-button')
 const deleteItem = document.querySelectorAll('#deleteItem')
@@ -60,13 +69,9 @@ deletebutton.forEach(boton => {
     boton.addEventListener("click", deleteProduct)
 })
 
-deletebutton.forEach(boton => {
-    boton.addEventListener("click",deleteItem)
-})
-
-DOMtotalItem.forEach(boton => {
-    boton.innerHTML += totalItem2()
-})
+// DOMtotalItem.forEach (boton => {
+//     boton.innerHTML += totalItem2()
+// })
 
 function deleteProduct(event) {
     
@@ -81,46 +86,32 @@ function deleteProduct(event) {
 }
 
 
-function totalItem2() {
-    let sumatorio = 0;
-    cart.forEach(item => {
-        sumatorio += item.quantity
-    });
+function totalItem2 (){
+    let sumatorio = 0 ;
+    
     console.info(sumatorio)
+    if (cart !== null){
+        cart.forEach (item => {
+            sumatorio += item.quantity
+        });
+    }
     return sumatorio
 };
 
 
 function totalCart() {
     var total = 0;
+    if (cart !== null){
     for (let i = 0; i < cart.length; i++) {
         total += cart[i].quantity * cart[i].price;
     }
+}
     return total;
 }
 
-function totalECart(){
-    let sumatorio = 0;
-    cart.forEach(item => {
-        sumatorio += item.price
-    });
-    console.info(sumatorio)
-    return sumatorio
-}
+
+
+const total = document.querySelector('#total');
 
 total.innerHTML += totalCart() + '€';
-
-console.info(totalCart());
-
-
-// function deleteItem(event){
-//     const productId = event.target.dataset.id;
-//     console.info(productId)
-//     cart = cart.filter(prd => prd.id.toString() !== productId.toString());
-//     localStorage.setItem('cart', JSON.stringify(cart));
-//     printCart();
-//     location.reload()
-//     totalItem2()
-
-// }
 

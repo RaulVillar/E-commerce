@@ -183,19 +183,6 @@ a {
     color: white
 }
 
-#totalCart {
-    width: 3vh;
-    height: 3vh;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(244, 248, 248, 0.966);
-    position:relative;
-    top: -3vh; left: 4vh;
-}
 
 
 /********************************
@@ -209,7 +196,7 @@ a {
 }
 
 .total-cart {
-    width: 30vw;
+    width: 20vw;
     text-align: center;
 }
 
@@ -218,8 +205,12 @@ a {
     justify-content: center;
 }
 
-.itemCart {
+.itemQuantity {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 18vh;
+    padding: 0;
 }
 
 .body-cart {
