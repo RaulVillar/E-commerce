@@ -101,4 +101,4 @@ DOMtotalItem.forEach (boton => {
 renderIndex();
 
 
-
+console.info(cart)
