@@ -275,11 +275,16 @@ a {
 }
 
 .totalItem, #total{
-    margin-bottom: 2vh;
-    margin-top: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -2vh; left: 3vh;
+   
 }
 
 h2{
     margin-top: 1vh;
     text-decoration: underline;
 }
+
