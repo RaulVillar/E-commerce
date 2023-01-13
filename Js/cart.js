@@ -62,8 +62,8 @@ printCart()
 
 const deletebutton = document.querySelectorAll('#delete-button')
 
-deletebutton.forEach (boton => {
-    boton.addEventListener("click", deleteProduct)
+deletebutton.forEach (button => {
+    button.addEventListener("click", deleteProduct)
 })
 
 // DOMtotalItem.forEach (boton => {
@@ -77,22 +77,23 @@ function deleteProduct(event){
     cart = cart.filter(prd => prd.id.toString() !== productId.toString());
     localStorage.setItem('cart',JSON.stringify(cart));
     printCart();
-    location.reload()
     totalItem2()
+    location.reload()
+    
     
 }
 
 
 function totalItem2 (){
-    let sumatorio = 0 ;
+    let summation = 0 ;
     
-    console.info(sumatorio)
+    console.info(summation)
     if (cart !== null){
         cart.forEach (item => {
-            sumatorio += item.quantity
+            summation += item.quantity
         });
     }
-    return sumatorio
+    return summation
 };
 
 
