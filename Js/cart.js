@@ -10,15 +10,15 @@ DOMbuttonDeleteCart.addEventListener('click', clearCart)
 
 //DOMtotalItem.innerHTML += totalItem;
 
-function printCart(){
-    
-    if (cart !== null){
-    cart.forEach((item) => {
-            
-        var totalProduct = item.quantity*item.price;
+function printCart() {
 
-            let print = document.createElement('tr'); 
-            
+    if (cart !== null) {
+        cart.forEach((item) => {
+
+            var totalProduct = item.quantity * item.price;
+
+            let print = document.createElement('tr');
+
             print.innerHTML = `
                 <td style= "height: 15vh">
                     <img src="${item.image}" style="height: 100%">
@@ -31,28 +31,28 @@ function printCart(){
                 <p>${item.price}€</p>
                 </td>
                 <td class="itemQuantity">
-                    <button>-</button>
+                    <button class= "subtract" data-id= "${item.id}" data-type= "subtract">-</button>
                     <p>${item.quantity}</p>
-                    <button>+</button>
+                    <button class= "add" data-id= "${item.id}" data-type= "add">+</button>
                 </td>
                 <td>
                     <p>${totalProduct} €</p>
                 </td>
             
             `;
-        
-        DOMcart.appendChild(print);
-    })
+
+            DOMcart.appendChild(print);
+        })
     }
 }
 
-function reloadCart (){
+function reloadCart() {
     cart = JSON.parse(localStorage.getItem('cart'))
 }
 
-function clearCart () {
+function clearCart() {
     localStorage.clear()
-    reloadCart ()
+    reloadCart()
     printCart()
     totalItem2()
     totalCart()
@@ -62,7 +62,7 @@ printCart()
 
 const deletebutton = document.querySelectorAll('#delete-button')
 
-deletebutton.forEach (boton => {
+deletebutton.forEach(boton => {
     boton.addEventListener("click", deleteProduct)
 })
 
@@ -70,25 +70,25 @@ deletebutton.forEach (boton => {
 //     boton.innerHTML += totalItem2()
 // })
 
-function deleteProduct(event){
+function deleteProduct(event) {
 
-    const productId = event.target.dataset.id; 
+    const productId = event.target.dataset.id;
     console.info(productId)
     cart = cart.filter(prd => prd.id.toString() !== productId.toString());
-    localStorage.setItem('cart',JSON.stringify(cart));
+    localStorage.setItem('cart', JSON.stringify(cart));
     printCart();
     location.reload()
     totalItem2()
-    
+
 }
 
 
-function totalItem2 (){
-    let sumatorio = 0 ;
-    
+function totalItem2() {
+    let sumatorio = 0;
+
     console.info(sumatorio)
-    if (cart !== null){
-        cart.forEach (item => {
+    if (cart !== null) {
+        cart.forEach(item => {
             sumatorio += item.quantity
         });
     }
@@ -98,11 +98,11 @@ function totalItem2 (){
 
 function totalCart() {
     var total = 0;
-    if (cart !== null){
-    for (let i = 0; i < cart.length; i++) {
-        total += cart[i].quantity * cart[i].price;
+    if (cart !== null) {
+        for (let i = 0; i < cart.length; i++) {
+            total += cart[i].quantity * cart[i].price;
+        }
     }
-}
     return total;
 }
 
@@ -112,3 +112,35 @@ const total = document.querySelector('#total');
 
 total.innerHTML += totalCart() + '€';
 
+
+function addAndDelete(event) {
+    const productId = event.target.dataset.id
+    const order = event.target.dataset.type
+
+    if (order == "add") {
+        cart.forEach(item => {
+            if (item.id == productId) {
+                item.quantity++
+            }
+        })
+    }
+    if (order == "subtract") {
+        cart.forEach(item => {
+            if (item.id == productId) {item.quantity-- }
+            if (item.quantity == 0) {deleteProduct(event) }
+        })
+    }
+
+    localStorage.setItem('cart', JSON.stringify(cart))
+    location.reload()
+
+}
+const add = document.querySelectorAll(".add")
+const subtract = document.querySelectorAll(".subtract")
+
+add.forEach(button => {
+    button.addEventListener("click", addAndDelete)
+})
+subtract.forEach(button => {
+    button.addEventListener("click", addAndDelete)
+})
