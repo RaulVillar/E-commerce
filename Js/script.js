@@ -2,7 +2,7 @@ const divisa = '€';
 const DOMnew = document.querySelector('#new');
 const DOMproducts = document.querySelector('#products');
 const DOMexclusive = document.querySelector('#exclusive');
-const DOMtotalItemIndex = document.querySelector('.totalItem')
+const DOMtotalItem = document.querySelectorAll('.totalItem')
 
 
 
@@ -66,8 +66,11 @@ function printNew(item) {
 function shoppingButton(event) {
 
     let des = event.target.getAttribute('marker')
-    //console.info(des)
+    console.info(des)
     let storage = products[des];
+
+    let prueba = products.find(element => element.id = des)
+    console.info(prueba)
 
     const exist = cart.some(product => product.id === storage.id);
 
@@ -97,8 +100,11 @@ function shoppingButton(event) {
     location.reload()
 }
 
+DOMtotalItem.forEach (boton => {
+    boton.innerHTML += totalItem2()
+})
 
-DOMtotalItemIndex.innerHTML += totalItem;
+//DOMtotalItemIndex.innerHTML += totalItem;
 
 renderIndex();
 
