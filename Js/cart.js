@@ -93,7 +93,7 @@ function totalItem2 (){
             sumatorio += item.quantity
         });
     }
-    return summation
+    return sumatorio
 };
 
 

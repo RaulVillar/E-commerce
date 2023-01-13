@@ -104,7 +104,7 @@ DOMtotalItem.forEach (boton => {
     boton.innerHTML += totalItem2()
 })
 
-//DOMtotalItemIndex.innerHTML += totalItem;
+
 
 renderIndex();
 

@@ -185,12 +185,19 @@ a{
 
 .color{
     background-color: blueviolet;
-    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
-    width: 1.5vw;
-    height: 2.5vh;
-    font-size: 1rem;
+    transform: translateY(-1vh);
+}
+
+.color,p {
+    color: white;
     text-align: center;
+    margin: 0 !important ;
 }
 
 /********************************
