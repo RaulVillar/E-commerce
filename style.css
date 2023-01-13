@@ -5,6 +5,16 @@
     padding: 0;
 }
 
+@font-face {
+            font-family: "Harlow";
+            src: url("/Fonts/HelveticaNeueCyrBold.ttf");
+        }
+
+@font-face {
+            font-family: "Harlowlight";
+            src: url("/Fonts/HelveticaNeueCyr-Light.ttf");
+        }
+
 body {
     width: 100vw;
 }
@@ -17,6 +27,7 @@ header {
     background-color: black;
     letter-spacing: 1vh;
     position: fixed;
+    z-index: 1;
 }
 
 ul {
@@ -65,22 +76,23 @@ h1 {
 }
 
 .title-new {
-    background-image: url(/imagenes/Novedades.png);
+    background-image: url(./imagenes/Novedades.png);
     background-size: cover;
 }
 
 .title-products {
-    background-image: url(/imagenes/Novedades.jpg);
+    background-image: url(./imagenes/Novedades.jpg);
     background-size: cover;
 }
 
 .title-exclusive {
-    background-image: url(/imagenes/samurai-japan-japanese-digital-art-artwork-hd-wallpaper-d33e540c52f0c77ca182734d8eb51838.jpg);
+    background-image: url(./imagenes/samurai-japan-japanese-digital-art-artwork-hd-wallpaper-d33e540c52f0c77ca182734d8eb51838.jpg);
     background-size: cover;
 }
 
 .container {
     margin-top: -3vh;
+    margin-bottom: 8vh;
 }
 
 #new,
@@ -118,7 +130,7 @@ h1 {
 #product-description {
     margin-top: 3vh;
     width: 50vh;
-    max-width: 50vh;
+    max-width: 49vh;
     line-height: 3.5vh;
     font-family: "Harlowlight";
     font-size: 2.1vh;
@@ -147,9 +159,9 @@ h1 {
 }
 
 footer {
+    position: fixed;
     background-color: rgb(0, 0, 0);
-    margin-bottom: 0;
-    position: absolute;
+    bottom: 0;
     left: 0;
     right: 0;
     height: 10vh;
@@ -166,3 +178,113 @@ footer {
     width: 60vh;
     height: 80vh;
 }
+
+a {
+    text-decoration: none;
+    color: white
+}
+.color{
+    background-color: blueviolet;
+    color: white;
+    border-radius: 50%;
+    width: 1.5vw;
+    height: 2.5vh;
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+
+
+/********************************
+***          SHOPPINGCART     ***
+********************************/
+
+.main-cart {
+    width: 60vw;
+    text-align: center;
+    padding-bottom: 10vh;
+}
+
+.total-cart {
+    width: 20vw;
+    text-align: center;
+}
+
+.body-cart {
+    display: flex;
+    justify-content: center;
+}
+
+.itemQuantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 18vh;
+    padding: 0;
+}
+
+.subtract, .add{
+    font-family: "Harlow";
+    text-align: center;
+    margin-top: 1vh;
+    border-color: black;
+    background-color: white;
+    padding-top: 0.3vh;
+    padding-bottom: 0.3vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    margin-right: 2vh;
+    margin-left: 2vh;
+}
+#delete-button{
+    font-family: "Harlow";
+    text-align: center;
+    margin-top: 1vh;
+    border-color: black;
+    background-color: white;
+    padding-top: 0.3vh;
+    padding-bottom: 0.3vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
+}
+.subtract:hover, .add:hover, #delete-button:hover, .deleteCart:hover, #tramitarPedido:hover{
+    background-color: blueviolet;
+    cursor: pointer;
+    
+}
+
+.deleteCart, #tramitarPedido{
+    font-family: "Harlow";
+    text-align: center;
+    margin-top: 1vh;
+    border-color: black;
+    background-color: white;
+    padding-top: 0.3vh;
+    padding-bottom: 0.3vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+    
+}
+
+.total-cart{
+   
+    background-color: rgba(214, 214, 214, 0.464);
+}
+
+.totalItem, #total{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -2vh; left: 3vh;
+   
+}
+
+h2{
+    margin-top: 1vh;
+    text-decoration: underline;
+}
+
