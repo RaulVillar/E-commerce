@@ -3,13 +3,13 @@ let totalItem = totalItem2();
 const DOMcart = document.querySelector('.main-cart');
 const DOMbuttonDeleteCart = document.querySelector('.deleteCart');
 const total = document.querySelector('#total');
-const DOMtotalItem = document.querySelectorAll('.totalItem')
+
 
 DOMbuttonDeleteCart.addEventListener('click', clearCart)
 
-//const DOMtotalItem = document.querySelectorAll('.totalItem')
 
-DOMtotalItem.innerHTML += totalItem;
+
+
 
 function printCart() {
 
@@ -59,16 +59,15 @@ function clearCart() {
     totalCart()
     location.reload()
 }
+printCart()
 const deletebutton = document.querySelectorAll('#delete-button')
-const deleteItem = document.querySelectorAll('#deleteItem')
+
 
 deletebutton.forEach(boton => {
     boton.addEventListener("click", deleteProduct)
 })
 
-// DOMtotalItem.forEach (boton => {
-//     boton.innerHTML += totalItem2()
-// })
+
 
 function deleteProduct(event) {
 
@@ -105,10 +104,6 @@ function totalCart() {
     }
     return total;
 }
-
-
-
-// const total = document.querySelector('#total');
 
 total.innerHTML += totalCart() + '€';
 

@@ -64,11 +64,11 @@ function printNew(item) {
 function shoppingButton(event) {
 
     let des = event.target.getAttribute('marker')
-    console.info(des)
+   
     let storage = products[des];
 
     let prueba = products.find(element => element.id = des)
-    console.info(prueba)
+    
 
     const exist = cart.some(product => product.id === storage.id);
     if (exist) {
@@ -87,7 +87,7 @@ function shoppingButton(event) {
     }
     localStorage.setItem('cart', JSON.stringify(cart))
     location.reload()
-    console.info(cart)
+    
     totalItem2()
     location.reload()
 }
@@ -96,9 +96,8 @@ DOMtotalItem.forEach (boton => {
     boton.innerHTML += totalItem2()
 })
 
-//DOMtotalItemIndex.innerHTML += totalItem;
 
 renderIndex();
 
 
-console.info(cart)
+

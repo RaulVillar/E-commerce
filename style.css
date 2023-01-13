@@ -183,6 +183,16 @@ a {
     text-decoration: none;
     color: white
 }
+.color{
+    background-color: blueviolet;
+    color: white;
+    border-radius: 50%;
+    width: 1.5vw;
+    height: 2.5vh;
+    font-size: 1rem;
+    text-align: center;
+}
+
 
 
 
@@ -214,6 +224,3 @@ a {
     padding: 0;
 }
 
-.body-cart {
-    scroll-margin: initial;
-}
