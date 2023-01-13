@@ -111,3 +111,4 @@ function totalCart() {
 const total = document.querySelector('#total');
 
 total.innerHTML += totalCart() + '€';
+
