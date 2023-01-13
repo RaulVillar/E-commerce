@@ -8,10 +8,11 @@ DOMbuttonDeleteCart.addEventListener('click', clearCart)
 
 const DOMtotalItem = document.querySelectorAll('.totalItem')
 
-DOMtotalItem.innerHTML += totalItem;
+//DOMtotalItem.innerHTML += totalItem;
 
 function printCart(){
     DOMcart.innerHTML = ''
+    if (cart !== null){
     cart.forEach((item) => {
             
             let print = document.createElement('div'); 
@@ -38,6 +39,7 @@ function printCart(){
         
         DOMcart.append(print);
     })
+    }
 }
 
 function reloadCart (){
@@ -49,6 +51,8 @@ function clearCart () {
     reloadCart ()
     printCart()
     totalItem2()
+    totalCart()
+    location.reload()
 }
 printCart()
 
@@ -77,20 +81,24 @@ function deleteProduct(event){
 
 function totalItem2 (){
     let sumatorio = 0 ;
-    cart.forEach (item => {
-        sumatorio += item.quantity
-    });
+    
     console.info(sumatorio)
+    if (cart !== null){
+        cart.forEach (item => {
+            sumatorio += item.quantity
+        });
+    }
     return sumatorio
 };
 
 
 function totalCart() {
     var total = 0;
-
+    if (cart !== null){
     for (let i = 0; i < cart.length; i++) {
         total += cart[i].quantity * cart[i].price;
     }
+}
     return total;
 }
 
