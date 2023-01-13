@@ -6,9 +6,7 @@ const DOMbuttonDeleteCart = document.querySelector('.deleteCart');
 
 DOMbuttonDeleteCart.addEventListener('click', clearCart)
 
-//const DOMtotalItem = document.querySelectorAll('.totalItem')
 
-//DOMtotalItem.innerHTML += totalItem;
 
 function printCart() {
 
@@ -66,9 +64,7 @@ deletebutton.forEach (boton => {
     boton.addEventListener("click", deleteProduct)
 })
 
-// DOMtotalItem.forEach (boton => {
-//     boton.innerHTML += totalItem2()
-// })
+
 
 function deleteProduct(event) {
 
@@ -93,7 +89,7 @@ function totalItem2 (){
             sumatorio += item.quantity
         });
     }
-    return summation
+    return sumatorio
 };
 
 
