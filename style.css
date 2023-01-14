@@ -274,13 +274,9 @@ a {
     background-color: rgba(214, 214, 214, 0.464);
 }
 
-.totalItem, #total{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    top: -2vh; left: 3vh;
-   
+ #total{
+    margin-bottom: 2vh;
+    margin-top: 2vh;
 }
 
 h2{
@@ -288,3 +284,12 @@ h2{
     text-decoration: underline;
 }
 
+#totalCartNumber{
+    background-color: black;
+    height: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -1vh; left: 4vh;
+}
