@@ -269,7 +269,7 @@ a{
     background-color: rgba(214, 214, 214, 0.464);
 }
 
-.totalItem, #total{
+ #total{
     margin-bottom: 2vh;
     margin-top: 2vh;
 }
@@ -277,4 +277,14 @@ a{
 h2{
     margin-top: 1vh;
     text-decoration: underline;
+}
+
+#totalCartNumber{
+    background-color: black;
+    height: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -1vh; left: 4vh;
 }
