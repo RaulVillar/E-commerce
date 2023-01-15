@@ -61,22 +61,19 @@ function printNew(item) {
 
 
 
-
-
 function shoppingButton(event) {
 
     let des = event.target.getAttribute('marker')
-    console.info(des)
+   
     let storage = products[des];
 
     let prueba = products.find(element => element.id = des)
-    console.info(prueba)
+    
 
     const exist = cart.some(product => product.id === storage.id);
-
-    if (exist){ 
+    if (exist) {
         const pro = cart.map(product => {
-            if(product.id === storage.id){
+            if (product.id === storage.id) {
                 product.quantity++;
                 return product;
             } else {
@@ -88,14 +85,9 @@ function shoppingButton(event) {
     }else {
         cart.push(storage)
     }
-
-        //console.info(products.find(element => element.id = 5))
-    
-    //cart.push(pro)
-
     localStorage.setItem('cart', JSON.stringify(cart))
+    location.reload()
     
-    console.info(cart)
     totalItem2()
     location.reload()
 }
@@ -105,8 +97,4 @@ DOMtotalItem.forEach (boton => {
 })
 
 
-
 renderIndex();
-
-
-
