@@ -301,3 +301,13 @@ h2{
     position: relative;
     top: -1vh; left: 4vh;
 }
+
+
+
+/********************************
+***          SHIPPING         ***
+********************************/
+
+#tramitarPedido a {
+    color: rgb(0, 0, 0);
+}

@@ -2,7 +2,8 @@ const divisa = '€';
 const DOMnew = document.querySelector('#new');
 const DOMproducts = document.querySelector('#products');
 const DOMexclusive = document.querySelector('#exclusive');
-const DOMtotalItem = document.querySelectorAll('.totalItem')
+const DOMtotalItem = document.querySelectorAll('.totalItem');
+const DOMtotal = document.querySelectorAll('#total');
 
 
 
@@ -67,7 +68,7 @@ function shoppingButton(event) {
    
     let storage = products[des];
 
-    let prueba = products.find(element => element.id = des)
+    let prueba = products.map(element => element.id).indexOf(des);
     
 
     const exist = cart.some(product => product.id === storage.id);
@@ -96,5 +97,8 @@ DOMtotalItem.forEach (boton => {
     boton.innerHTML += totalItem2()
 })
 
+DOMtotal.forEach(param => {
+    param.innerHTML += totalCart() + '€';
+})
 
 renderIndex();

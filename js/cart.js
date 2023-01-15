@@ -2,7 +2,7 @@ let cart = JSON.parse(localStorage.getItem('cart')) || []
 let totalItem = totalItem2();
 const DOMcart = document.querySelector('.main-cart');
 const DOMbuttonDeleteCart = document.querySelector('.deleteCart');
-const total = document.querySelector('#total');
+
 
 
 DOMbuttonDeleteCart.addEventListener('click', clearCart)
@@ -60,6 +60,7 @@ function clearCart() {
     location.reload()
 }
 printCart()
+
 const deletebutton = document.querySelectorAll('#delete-button')
 
 deletebutton.forEach (boton => {
@@ -105,7 +106,8 @@ function totalCart() {
     return total;
 }
 
-total.innerHTML += totalCart() + '€';
+
+
 
 
 function addAndDelete(event) {
