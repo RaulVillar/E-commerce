@@ -25,7 +25,7 @@ function printCart() {
                 </td>
                 <td>
                     <h5>${item.name}</h5>
-                    <button id="delete-button" data-id="${item.id}">borrar</button>
+                    <button id="delete-button" data-id="${item.id}">Borrar</button>
                 </td>
                 <td>
                 <p>${item.price}€</p>
