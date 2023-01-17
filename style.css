@@ -294,3 +294,14 @@ h2{
     position: relative;
     top: -1vh; left: 4vh;
 }
+
+@media (max-width: 700px){
+
+    #new, #products, #exclusive{
+        flex-direction: column;
+        padding-left: 25vh;
+        height: 250vh;
+        width: 60vh;
+        
+    }
+}
