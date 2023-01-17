@@ -3,14 +3,14 @@ const products = [
         id: 0,
         name: "Refresco de Sailor Moon",
         price: 1.50,
-        description: "Un producto la mar de refrescante, sabor a pomelo y con la grandiosa Sailor Moon como protagonista.",
+        description: "Un producto la mar de refrescante, sabor a pomelo y con Sailor Moon como protagonista.",
         image: 'imagenes/prd-agua-soda-sabor-pomelo-edicion-sailor-moon-japonshop_2.webp',
         category: "New",
         quantity: 1
     },
     {
         id: 1,
-        name: "Bebida de cafe Asahi Wonda Premium",
+        name: "Bebida de cafe Asahi Wonda",
         price: 1.50,
         description: "El cafe de la marca Asahi, fabricado por japoneses y para japoneses, es un producto exclusivo.",
         image: 'imagenes/prd-bebida-cafe-asahi-wonda-gold-premium-1-japonshop_2.webp',
@@ -21,14 +21,14 @@ const products = [
         id: 2,
         name: "Bombones de chocolate",
         price: 3,
-        description: "Una explosion de sabor inigualable, un producto exquisito fabricado por los más expertos chocolateros nipones.",
+        description: "Una explosion de sabor inigualable, fabricado por los más expertos chocolateros nipones.",
         image: 'imagenes/prd-bombones-petit-melo-chocolate-frambuesa-japonshop.webp',
         category: "New",
         quantity: 1
     },
     {
         id: 3,
-        name: "Chicles de melocoton One Piece",
+        name: "Chicles de melocoton",
         price: 2.50,
         description: "Chicles sabor melocoton, no te concederan poderes, pero estan riquisimos.",
         image: 'imagenes/prd-chicles-one-piece-japon-japonshop.webp',
@@ -75,7 +75,7 @@ const products = [
         id: 8,
         name: "Salsa de curry de Sinchan",
         price: 3.20,
-        description: "Esta salsa de curry, con cerdo y maiz, que por suerte no ha cocinado Sinchan, es suave al paladar y muy nutritiva.",
+        description: "Esta salsa de curry, con cerdo y maiz, es suave al paladar y muy nutritiva.",
         image: 'imagenes/prd-salsa-curry-japonesa-cerdo-maiz-shin-chan-japonshop_1.webp',
         category: "Exclusive",
         quantity: 1
@@ -100,7 +100,7 @@ const products = [
     },
     {
         id: 11,
-        name: "Cebada japonesa limitada Rilakkum",
+        name: "Cebada japonesa Rilakkum",
         price: 5,
         description: "Una imperial cebada nipona, limitada y exclusiva, del osito Rilakkum",
         image: 'imagenes/prd-te-cebada-japones-edicion-limitada-rilakkuma-japonshop.webp',
