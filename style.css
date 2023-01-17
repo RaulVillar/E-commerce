@@ -7,12 +7,12 @@
 
 @font-face {
             font-family: "Harlow";
-            src: url("./Fonts/HelveticaNeueCyrBold.ttf");
+            src: url("/Fonts/HelveticaNeueCyrBold.ttf");
         }
 
 @font-face {
             font-family: "Harlowlight";
-            src: url("./Fonts/HelveticaNeueCyr-Light.ttf");
+            src: url("/Fonts/HelveticaNeueCyr-Light.ttf");
         }
 
 body {
@@ -27,6 +27,7 @@ header {
     background-color: black;
     letter-spacing: 1vh;
     position: fixed;
+    z-index: 1;
 }
 
 ul {
@@ -178,11 +179,10 @@ footer {
     height: 80vh;
 }
 
-a{
+a {
     text-decoration: none;
-    color:white
+    color: white
 }
-
 .color{
     background-color: blueviolet;
     color: white;
@@ -193,19 +193,25 @@ a{
     text-align: center;
 }
 
+
+
+
 /********************************
 ***          SHOPPINGCART     ***
 ********************************/
 
 .main-cart {
+    
     width: 60vw;
     text-align: center;
     padding-bottom: 10vh;
 }
+
 .total-cart {
     width: 20vw;
     text-align: center;
 }
+
 .body-cart {
     display: flex;
     justify-content: center;

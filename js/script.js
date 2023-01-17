@@ -4,10 +4,6 @@ const DOMproducts = document.querySelector('#products');
 const DOMexclusive = document.querySelector('#exclusive');
 const DOMtotalItem = document.querySelectorAll('.totalItem')
 
-
-
-
-
 function renderIndex() {
 
     var news = products.filter(item => item.category == "New");
@@ -15,13 +11,9 @@ function renderIndex() {
     var exclusive = products.filter(item => item.category == "Exclusive");
 
     news.forEach((item) => { DOMnew.appendChild(printNew(item)) });
-
     product.forEach((item) => { DOMproducts.appendChild(printNew(item)) });
-
     exclusive.forEach((item) => { DOMexclusive.appendChild(printNew(item)) });
-
-}
-
+};
 
 function printNew(item) {
 
@@ -57,26 +49,17 @@ function printNew(item) {
     myProduct.appendChild(myProductPrice);
     myProduct.appendChild(myProductButton);
     return myProduct
-}
-
-
-
-
+};
 
 function shoppingButton(event) {
 
     let des = event.target.getAttribute('marker')
-    console.info(des)
     let storage = products[des];
 
-    let prueba = products.find(element => element.id = des)
-    console.info(prueba)
-
     const exist = cart.some(product => product.id === storage.id);
-
-    if (exist){ 
+    if (exist) {
         const pro = cart.map(product => {
-            if(product.id === storage.id){
+            if (product.id === storage.id) {
                 product.quantity++;
                 return product;
             } else {
@@ -85,28 +68,18 @@ function shoppingButton(event) {
         });
         cart = [...pro]
 
-    }else {
+    } else {
         cart.push(storage)
     }
 
-        //console.info(products.find(element => element.id = 5))
-    
-    //cart.push(pro)
-
     localStorage.setItem('cart', JSON.stringify(cart))
-    
-    console.info(cart)
+    location.reload()
     totalItem2()
     location.reload()
-}
+};
 
-DOMtotalItem.forEach (boton => {
+DOMtotalItem.forEach(boton => {
     boton.innerHTML += totalItem2()
-})
-
-//DOMtotalItemIndex.innerHTML += totalItem;
+});
 
 renderIndex();
-
-
-
