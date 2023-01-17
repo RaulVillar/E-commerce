@@ -1,8 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-   
-    font-family: 'Chakra Petch', 'Montserrat','Roboto', sans-serif;
+    font-family: 'Chakra Petch', 'Montserrat', 'Roboto', sans-serif;
 }
 
 .nav {
@@ -21,93 +20,85 @@ body {
 }
 
 .bolsa {
-
     margin-right: -3%;
     margin-top: 1%;
 
 }
-
+.bolsa-img{
+    width: 30%;
+}
+.menu-img{
+    width: 30%;
+}
+.logo-img{
+    width: 60%;
+}
 .line {
     margin-top: -10%;
 }
 
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .title-new {
     margin-top: 1%;
-    margin-left: 47%;
-    font-family: 'Chakra Petch', 'Montserrat','Roboto', sans-serif;
     font-weight: 600;
-    font-size: 20pt;
+    font-size: 5vh;
     color: #EFBBD5;
 }
 
-#new {
-    width: 180vh;
+#new,
+#exclusive,
+#products {
+    width: 95vw;
     height: 60vh;
     border: 0.5vh solid #EFBBD5;
     border-radius: 8vh;
-    margin-left: 20vh;
     margin-top: 1%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-start;
+    justify-content: space-around;
     padding-bottom: 5vh;
     padding-top: 5vh;
-    justify-content: center;
+
+}
+
+#products {
+    border: 0.5vh solid #9BDDD2;
+}
+
+#exclusive {
+    border: 0.5vh solid #f3e75e;
 }
 
 .title-products {
     margin-top: 1%;
-    margin-left: 45%;
-    font-family: 'Chakra Petch', 'Montserrat','Roboto', sans-serif;
-    font-size: 20pt;
+    font-size: 5vh;
     color: #9BDDD2;
 }
 
-#products {
-    width: 180vh;
-    height: 60vh;
-    border: 0.5vh solid #9BDDD2;
-    border-radius: 8vh;
-    margin-left: 20vh;
-    margin-top: 1%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    padding-bottom: 5vh;
-    padding-top: 5vh;
-}
+
 
 .title-exclusive {
     margin-top: 1%;
-    margin-left: 45%;
-    font-family: 'Chakra Petch', 'Montserrat','Roboto', sans-serif;
-    font-size: 20pt;
+    font-size: 5vh;
     color: #f3e75e;
 }
 
-#exclusive {
-    width: 180vh;
-    height: 60vh;
-    border: 0.5vh solid #f3e75e;
-    border-radius: 8vh;
-    margin-left: 20vh;
-    margin-top: 1%;
+#box {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    padding-bottom: 5vh;
-    padding-top: 5vh;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 #product-image {
-    width: 20vh;
+    width: 10vw;
     padding: 0%;
     margin: 0%;
     margin-top: 4vh;
-    margin-left: 13vh;
     transition: all .2s ease-in-out;
 }
 
@@ -116,43 +107,43 @@ body {
 }
 
 #product-title {
-    font-family: 'Chakra Petch', 'Montserrat','Roboto', sans-serif;
+    
     letter-spacing: 0.2vh;
     font-size: 2.0vh;
     line-height: 3.5vh;
-    margin-left: 3vh;
     text-align: center;
-    max-width: 40vh;
+    max-width: 40vw;
 }
 
 #product-description {
-    font-family: 'Chakra Petch', 'Montserrat','Roboto', sans-serif;
+   
     margin-top: 5vh;
-    margin-left: 3vh;
     width: 35vh;
-    max-width: 49vh;
+    max-width: 49vw;
     line-height: 1.8vh;
     font-size: 1.5vh;
+    
 }
 
 #product-price {
-    font-family: 'Chakra Petch', 'Montserrat','Roboto', sans-serif;
-    font-size: 25px;
-    margin-left: 3vh;
-    margin-top: 3vh
+    
+    font-size: 3vh;
+    margin-top: 3vh;
+    text-align: start;
+    width: 100%;
 }
 
 #product-button {
-    font-family: 'Chakra Petch', 'Montserrat','Roboto', sans-serif;
+    
     text-align: center;
-    margin-top: 1vh;
+    margin-top: -6%;
     border-color: black;
     background-color: white;
     border-radius: 5vh;
-    padding-top: 0.3vh;
-    padding-bottom: 0.3vh;
-    padding-left: 1vh;
-    padding-right: 1vh;
+    font-size: 80%;
+    width: 20%;
+    
+    
 }
 
 #product-button:hover {
@@ -196,14 +187,14 @@ a {
 ********************************/
 
 .main-cart {
-    font-family: 'Chakra Petch', 'Montserrat','Roboto', sans-serif;
+    
     width: 60vw;
     text-align: center;
     padding-bottom: 10vh;
 }
 
 .total-cart {
-    font-family: 'Chakra Petch', 'Montserrat','Roboto', sans-serif;
+    
     width: 20vw;
     height: 65vh;
     margin-left: 5%;
@@ -226,7 +217,7 @@ a {
 
 .subtract,
 .add {
-    font-family: 'Chakra Petch', 'Montserrat','Roboto', sans-serif;
+   
     text-align: center;
     margin-top: 1vh;
     border-color: black;
@@ -241,7 +232,7 @@ a {
 }
 
 #delete-button {
-    font-family: 'Chakra Petch', 'Montserrat','Roboto', sans-serif;
+    
     text-align: center;
     margin-top: 1vh;
     border-color: black;
@@ -265,7 +256,7 @@ a {
 
 .deleteCart,
 #tramitarPedido {
-    font-family: 'Chakra Petch', 'Montserrat','Roboto', sans-serif;
+    
     text-align: center;
     margin-top: 1vh;
     border-color: black;
@@ -283,7 +274,7 @@ a {
 .total-cart {
 
     background-color: #ffedf6;
-  
+
 
 }
 
@@ -294,7 +285,7 @@ a {
 
 h2 {
 
-    font-family: 'Chakra Petch', 'Montserrat','Roboto', sans-serif;
+   
     margin-top: 1vh;
 
 }
@@ -304,7 +295,7 @@ h2 {
     height: 2vh;
     transform: translateY(-4.7vh);
     margin-left: 1vh;
-    
+
 }
 
 .line3 {
@@ -312,19 +303,38 @@ h2 {
 
 }
 
-.scroll{
-    border: #EFBBD5;
-    height:115%; 
-   
-}
 
-@media (max-width: 700px){
+@media (max-width: 700px) {
 
-    #new, #products, #exclusive{
+    #new,
+    #products,
+    #exclusive {
         flex-direction: column;
-        padding-left: 25vh;
-        height: 250vh;
+        height: auto;
         width: 60vh;
+        display: flex;
+    }
+   
+    #product-price{
+        width:58%;
+    }
+    #product-title{
+        font-size: 3vh;
+        margin-top: 6vh;
         
     }
+    #product-description{
+        font-size: 1.9vh;
+    }
+    #product-image{
+        width: 30%;
+    }
+   
+   .bolsa-img,
+   .menu-img{
+    width: 60%;
+   }
+    .logo-img{
+        width:70% ;
+    }  
 }
