@@ -5,7 +5,13 @@ const DOMexclusive = document.querySelector('#exclusive');
 const DOMtotalItem = document.querySelectorAll('.totalItem');
 const DOMtotal = document.querySelectorAll('#total');
 
+DOMtotalItem.forEach (boton => {
+    boton.innerHTML += totalItem2()
+})
 
+DOMtotal.forEach(param => {
+    param.innerHTML += totalCart() + '€';
+})
 
 
 
@@ -64,11 +70,13 @@ function printNew(item) {
 
 function shoppingButton(event) {
 
-    let des = event.target.getAttribute('marker')
-   
-    let storage = products[des];
+    let itemMarker = event.target.getAttribute('marker')
 
-    let prueba = products.map(element => element.id).indexOf(des);
+    //let position = products.map(element => element.id.toString()).indexOf(itemMarker);
+    //console.info(typeof itemMarker)
+    let storage = products.find(element => element.id.toString() == itemMarker )
+    // console.info(object)
+    //let storage = products[position];
     
 
     const exist = cart.some(product => product.id === storage.id);
@@ -87,18 +95,11 @@ function shoppingButton(event) {
         cart.push(storage)
     }
     localStorage.setItem('cart', JSON.stringify(cart))
-    location.reload()
     
     totalItem2()
     location.reload()
 }
 
-DOMtotalItem.forEach (boton => {
-    boton.innerHTML += totalItem2()
-})
 
-DOMtotal.forEach(param => {
-    param.innerHTML += totalCart() + '€';
-})
 
 renderIndex();

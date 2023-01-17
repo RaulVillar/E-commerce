@@ -1,5 +1,6 @@
 let cart = JSON.parse(localStorage.getItem('cart')) || []
 let totalItem = totalItem2();
+
 const DOMcart = document.querySelector('.main-cart');
 const DOMbuttonDeleteCart = document.querySelector('.deleteCart');
 

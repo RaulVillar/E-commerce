@@ -9,7 +9,7 @@ const products = [
         quantity: 1
     },
     {
-        id: 1,
+        id: 123,
         name: "Bebida de cafe Asahi Wonda Premium",
         price: 1.50,
         description: "El cafe de la marca Asahi, fabricado por japoneses y para japoneses, es un producto exclusivo.",
@@ -36,7 +36,7 @@ const products = [
         quantity: 1
     },
     {
-        id: 4,
+        id: "2547B",
         name: "Fideos Ramen Naruto",
         price: 2,
         description: "Una bolsita de fideos, sabor a pollo, con los ingredientes preferidos de nuestro amado Naruto.",
@@ -54,7 +54,7 @@ const products = [
         quantity: 1 
     },
     {
-        id: 6,
+        id: 4758,
         name: "Galleta Pokemon",
         price: 3,
         description: "Una adorable galletita con un pokemon sorpresa. Hay mas de 20 misteriosos pokemons por comer!",
