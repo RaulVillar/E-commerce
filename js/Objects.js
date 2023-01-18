@@ -12,7 +12,7 @@ const products = [
         id: 1,
         name: "Bebida de café Asahi Wonda",
         price: 1.50,
-        description: "El café de la marca Asahi, fabricado por japoneses y para japoneses, es un producto exclusivo.",
+        description: "El café de la marca Asahi, fabricado por japoneses y para japoneses.",
         image: 'imagenes/prd-bebida-cafe-asahi-wonda-gold-premium-1-japonshop_2.webp',
         category: "New",
         quantity: 1
@@ -102,7 +102,7 @@ const products = [
         id: 11,
         name: "Cebada japonesa Rilakkum",
         price: 5,
-        description: "Una imperial cebada nipona, limitada y exclusiva, del osito Rilakkum",
+        description: "Una imperial cebada nipona, limitada y exclusiva, del osito Rilakkum.",
         image: 'imagenes/prd-te-cebada-japones-edicion-limitada-rilakkuma-japonshop.webp',
         category: "Exclusive",
         quantity: 1

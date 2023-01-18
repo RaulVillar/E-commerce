@@ -2,8 +2,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    
-    font-family: 'Chakra Petch', 'Montserrat', 'Roboto', sans-serif;
+    font-family: 'Montserrat', 'Roboto', sans-serif;
 }
 
 .mainContent {
@@ -53,11 +52,11 @@ body {
     flex-direction: column;
 }
 
-.title-new {
-    margin-top: 1%;
-    font-weight: 600;
-    font-size: 5vh;
-    color: #EFBBD5;
+h1 {
+    margin: 1;
+}
+h2{
+    font-weight: 400;
 }
 
 #new,
@@ -67,7 +66,6 @@ body {
     height: 60vh;
     border: 0.5vh solid #EFBBD5;
     border-radius: 8vh;
-    margin-top: 1%;
     display: flex;
     justify-content: space-around;
     padding-bottom: 5vh;
@@ -83,16 +81,18 @@ body {
     border: 0.5vh solid #f3e75e;
 }
 
+
+.title-new {
+    font-size: 5vh;
+    color: #EFBBD5;
+}
+
 .title-products {
-    margin-top: 1%;
     font-size: 5vh;
     color: #9BDDD2;
 }
 
-
-
 .title-exclusive {
-    margin-top: 1%;
     font-size: 5vh;
     color: #f3e75e;
 }
@@ -101,6 +101,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 20.5vw;
 
 }
 
@@ -119,7 +120,7 @@ body {
 #product-title {
     
     letter-spacing: 0.2vh;
-    font-size: 2.0vh;
+    font-size: 2.5vh;
     line-height: 3.5vh;
     text-align: center;
     max-width: 40vw;
@@ -128,11 +129,11 @@ body {
 #product-description {
    
     margin-top: 5vh;
-    width: 35vh;
-    max-width: 49vw;
+    height: 5.34vh;
+    max-width: 40vw;
     line-height: 1.8vh;
     font-size: 1.5vh;
-    
+
 }
 
 #product-price {
@@ -146,12 +147,12 @@ body {
 #product-button {
     
     text-align: center;
-    margin-top: -6%;
     border-color: black;
     background-color: white;
     border-radius: 5vh;
     font-size: 80%;
     width: 20%;
+    padding-bottom: 0.3vh;
     
     
 }
@@ -217,6 +218,10 @@ a {
 .body-cart {
     display: flex;
     justify-content: center;
+}
+
+.body-cart h2 {
+    padding-top:3vh
 }
 
 .itemQuantity {
