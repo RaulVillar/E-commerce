@@ -96,4 +96,5 @@ function shoppingButton(event) {
 };
 
 
+
 renderIndex();
