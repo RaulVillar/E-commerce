@@ -22,13 +22,9 @@ function renderIndex() {
     var exclusive = products.filter(item => item.category == "Exclusive");
 
     news.forEach((item) => { DOMnew.appendChild(printNew(item)) });
-
     product.forEach((item) => { DOMproducts.appendChild(printNew(item)) });
-
     exclusive.forEach((item) => { DOMexclusive.appendChild(printNew(item)) });
-
-}
-
+};
 
 function printNew(item) {
 
@@ -64,9 +60,7 @@ function printNew(item) {
     myProduct.appendChild(myProductPrice);
     myProduct.appendChild(myProductButton);
     return myProduct
-}
-
-
+};
 
 function shoppingButton(event) {
 
@@ -91,15 +85,15 @@ function shoppingButton(event) {
         });
         cart = [...pro]
 
-    }else {
+    } else {
         cart.push(storage)
     }
+
     localStorage.setItem('cart', JSON.stringify(cart))
     
     totalItem2()
     location.reload()
-}
-
+};
 
 
 renderIndex();
