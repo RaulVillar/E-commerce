@@ -48,7 +48,7 @@ function printNew(item) {
     myProductPrice.id = 'product-price';
 
     const myProductButton = document.createElement("button");
-    myProductButton.innerHTML = "Shop"
+    myProductButton.innerHTML = "Añadir"
     myProductButton.id = 'product-button';
     myProductButton.setAttribute('marker', item.id);
     myProductButton.addEventListener('click', shoppingButton);

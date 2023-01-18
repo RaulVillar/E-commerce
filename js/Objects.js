@@ -12,7 +12,7 @@ const products = [
         id: 1,
         name: "Bebida de café Asahi Wonda",
         price: 1.50,
-        description: "El café de la marca Asahi, fabricado por japoneses y para japoneses, es un producto exclusivo.",
+        description: "El café de la marca Asahi, fabricado por japoneses y para japoneses.",
         image: 'imagenes/prd-bebida-cafe-asahi-wonda-gold-premium-1-japonshop_2.webp',
         category: "New",
         quantity: 1
