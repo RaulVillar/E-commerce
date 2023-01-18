@@ -2,7 +2,7 @@
 
 fetch('https://api.chatbot.com/v2/stories/63c7ed581c9d010007d555b8', {
   headers: {
-    'authorization': 'Bearer RNlbfvaaluHo95zwBExJw6yX1Cb5Ecny'
+    'authorization': 'Bearer '
   }
   
 })
