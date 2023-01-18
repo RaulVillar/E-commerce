@@ -130,9 +130,8 @@ h2{
     height: 5.34vh;
     max-width: 40vw;
     line-height: 1.8vh;
-    font-size: 1.7vh;
-    font-weight: 200;
-    
+    font-size: 1.5vh;
+
 }
 
 #product-price {
@@ -374,22 +373,19 @@ h2 {
         height: auto;
         width: 90vw;
     }
-
-    #product-price {
-        width: 58%;
+   
+    #product-price{
+        width:58%;
     }
-
-    #product-title {
+    #product-title{
         font-size: 3vh;
         margin-top: 6vh;
-
+        
     }
-
-    #product-description {
+    #product-description{
         font-size: 1.9vh;
     }
-
-    #product-image {
+    #product-image{
         width: 30%;
     }
 
