@@ -4,6 +4,7 @@ body {
     overflow-x: hidden;
     
     font-family: 'Chakra Petch', 'Montserrat', 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 
 .mainContent {
