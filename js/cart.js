@@ -1,8 +1,9 @@
 let cart = JSON.parse(localStorage.getItem('cart')) || []
 let totalItem = totalItem2();
+
 const DOMcart = document.querySelector('.main-cart');
 const DOMbuttonDeleteCart = document.querySelector('.deleteCart');
-const total = document.querySelector('#total');
+
 
 printCart()
 
@@ -97,7 +98,8 @@ function totalCart() {
     return total;
 };
 
-total.innerHTML += totalCart() + '€';
+
+
 
 function addAndDelete(event) {
     const productId = event.target.dataset.id;
