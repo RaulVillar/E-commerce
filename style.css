@@ -4,7 +4,6 @@ body {
     overflow-x: hidden;
     
     font-family: 'Chakra Petch', 'Montserrat', 'Roboto', sans-serif;
-    overflow-x: hidden;
 }
 
 .mainContent {
@@ -34,19 +33,15 @@ body {
     margin-top: 1%;
 
 }
-
-.bolsa-img {
+.bolsa-img{
     width: 30%;
 }
-
-.menu-img {
+.menu-img{
     width: 30%;
 }
-
-.logo-img {
+.logo-img{
     width: 60%;
 }
-
 .line {
     width: 100vw;
     margin-top: -10%;
@@ -122,7 +117,7 @@ body {
 }
 
 #product-title {
-
+    
     letter-spacing: 0.2vh;
     font-size: 2.0vh;
     line-height: 3.5vh;
@@ -131,17 +126,17 @@ body {
 }
 
 #product-description {
-
+   
     margin-top: 5vh;
     width: 35vh;
     max-width: 49vw;
     line-height: 1.8vh;
     font-size: 1.5vh;
-
+    
 }
 
 #product-price {
-
+    
     font-size: 3vh;
     margin-top: 3vh;
     text-align: start;
@@ -149,7 +144,7 @@ body {
 }
 
 #product-button {
-
+    
     text-align: center;
     margin-top: -6%;
     border-color: black;
@@ -157,8 +152,8 @@ body {
     border-radius: 5vh;
     font-size: 80%;
     width: 20%;
-
-
+    
+    
 }
 
 #product-button:hover {
@@ -204,14 +199,14 @@ a {
 ********************************/
 
 .main-cart {
-
+    
     width: 60vw;
     text-align: center;
     padding-bottom: 10vh;
 }
 
 .total-cart {
-
+    
     width: 20vw;
     height: 65vh;
     margin-left: 5%;
@@ -234,7 +229,7 @@ a {
 
 .subtract,
 .add {
-
+   
     text-align: center;
     margin-top: 1vh;
     border-color: black;
@@ -249,7 +244,7 @@ a {
 }
 
 #delete-button {
-
+    
     text-align: center;
     margin-top: 1vh;
     border-color: black;
@@ -273,7 +268,7 @@ a {
 
 .deleteCart,
 #tramitarPedido {
-
+    
     text-align: center;
     margin-top: 1vh;
     border-color: black;
@@ -302,7 +297,7 @@ a {
 
 h2 {
 
-
+   
     margin-top: 1vh;
 
 }
@@ -322,7 +317,7 @@ h2 {
 }
 
 
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
 
     #new,
     #products,
@@ -332,31 +327,27 @@ h2 {
         width: 60vh;
         display: flex;
     }
-
-    #product-price {
-        width: 58%;
+   
+    #product-price{
+        width:58%;
     }
-
-    #product-title {
+    #product-title{
         font-size: 3vh;
         margin-top: 6vh;
-
+        
     }
-
-    #product-description {
+    #product-description{
         font-size: 1.9vh;
     }
-
-    #product-image {
+    #product-image{
         width: 30%;
     }
-
-    .bolsa-img,
-    .menu-img {
-        width: 60%;
-    }
-
-    .logo-img {
-        width: 70%;
-    }
+   
+   .bolsa-img,
+   .menu-img{
+    width: 60%;
+   }
+    .logo-img{
+        width:70% ;
+    }  
 }
