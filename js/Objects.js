@@ -36,7 +36,7 @@ const products = [
         quantity: 1
     },
     {
-        id: 4,
+        id: "2547B",
         name: "Fideos Ramen Naruto",
         price: 2,
         description: "Una bolsita de fideos, sabor a pollo, con los ingredientes preferidos de nuestro amado Naruto.",

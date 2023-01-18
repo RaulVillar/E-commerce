@@ -1,8 +1,15 @@
 body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+    
     font-family: 'Chakra Petch', 'Montserrat', 'Roboto', sans-serif;
     overflow-x: hidden;
+}
+
+.mainContent {
+    display: flex;
+    flex-direction: column;
 }
 
 .nav {
@@ -17,10 +24,12 @@ body {
 
 .logo {
     margin-left: 24%;
-    margin-top: -9%;
+    
 }
 
 .bolsa {
+    width: auto;
+    height: auto;
     margin-right: -3%;
     margin-top: 1%;
 
@@ -39,6 +48,7 @@ body {
 }
 
 .line {
+    width: 100vw;
     margin-top: -10%;
 }
 
@@ -158,6 +168,8 @@ body {
 
 .line2 {
     margin-top: 1%;
+    z-index: 1;
+    width: 100vw;
 }
 
 .footer {
@@ -300,6 +312,7 @@ h2 {
     height: 2vh;
     transform: translateY(-4.7vh);
     margin-left: 1vh;
+    width: auto;
 
 }
 
