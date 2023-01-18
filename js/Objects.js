@@ -102,7 +102,7 @@ const products = [
         id: 11,
         name: "Cebada japonesa Rilakkum",
         price: 5,
-        description: "Una imperial cebada nipona, limitada y exclusiva, del osito Rilakkum",
+        description: "Una imperial cebada nipona, limitada y exclusiva, del osito Rilakkum.",
         image: 'imagenes/prd-te-cebada-japones-edicion-limitada-rilakkuma-japonshop.webp',
         category: "Exclusive",
         quantity: 1
