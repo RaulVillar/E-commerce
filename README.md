@@ -31,11 +31,11 @@ Todos los elementos que seleccionamos en el carrito de la compra son guardados e
     * Eliminar el carrito en su totatilad
 
 Este proyecto a sido realizado por un equipo de 5 programadores en formacion:
-     - Carlos Sánchez Yerga
-     - Celia Cueria Barcia
-     - Elena Pulido Alvaré
-     - Raul Villar Fernández
-     - Pablo Pérez González
+     * Carlos Sánchez Yerga
+     * Celia Cueria Barcia
+     * Elena Pulido Alvaré
+     * Raul Villar Fernández
+     * Pablo Pérez González
 
 
 
