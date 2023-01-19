@@ -31,13 +31,13 @@ Todos los elementos que seleccionamos en el carrito de la compra son guardados e
     * Eliminar el carrito en su totatilad
 
 Este proyecto a sido realizado por un equipo de 5 programadores en formacion:
-     * Carlos Sánchez Yerga
-     * Celia Cueria Barcia
-     * Elena Pulido Alvaré
-     * Raul Villar Fernández
-     * Pablo Pérez González
+    - Carlos Sánchez Yerga
+    - Celia Cueria Barcia
+    - Elena Pulido Alvaré
+    - Raul Villar Fernández
+    - Pablo Pérez González
 
-
+[<img src="https://avatars.githubusercontent.com/u/37356058?v=4" width=115><br><sub>Camila Fernanda Alves</sub>](https://github.com/camilafernanda) 
 
 Tecnologias usadas en este proyecto
 
@@ -45,4 +45,10 @@ Tecnologias usadas en este proyecto
   <img align="center" alt="HTML" title="HTML 5" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
   <img align="center" alt="CSS" title="CSS 3" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
   <img align="center" alt="JavaScript" title="JavaScript" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+<br>
+  <img align="center" alt="Git" title="Git" height="50" width="80" src="https://blog.facialix.com/wp-content/uploads/2021/04/git-github-cero-facialix.jpg">
+  <img align="center" alt="Jira" title="Jira" height="50" width="100" src="https://logos-marcas.com/wp-content/uploads/2021/03/Jira-Simbolo.png">
+  <img align="center" alt="figma" title="figma" height="50" width="80" src="https://www.protocol.com/media-library/figma-logo.png?id=29208385&width=1200&height=600&coordinates=0%2C60%2C0%2C60">
 </div>
+
+
