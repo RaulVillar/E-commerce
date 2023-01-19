@@ -279,7 +279,7 @@ button {
 
 input {
     border: none;
-    border-radius: 1vh
+    border-radius: 1vh;
 }
 
 .personaldata-container {
@@ -387,6 +387,26 @@ h2 {
         flex-wrap: wrap;
         height: auto;
         width: 95vw;
+    }
+
+    .body-cart2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .data-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .total-cart {
+       position: relative;
+       margin: 0;
+       height: auto;
+       margin-top: 5vh;
+       width: 60vw;
     }
 }
 
