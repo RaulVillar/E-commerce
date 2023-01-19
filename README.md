@@ -16,7 +16,7 @@ Este es un proyecto de un e-comerce realizado por un grupo de alumnos de Factori
         - Crear pagina de productos
         - Crear Carrito de compras ( no debo perder mi carro de compras cuando cierro la pagina)
 
-     * Ademas de esto tenemos un desafio extra que es el uso de una API que nos genere un mensaje con los datos de la compra  en whatsapp
+     * Ademas de esto tenemos un desafio extra que es el uso de una API de chatBoot
 
 Actualmente este proyecto es un proyecto en desarrollo que se seguira desarrollando a medida que el curso avance y aprendamos nuevas tecnicas ( implementacion de nuevos lenguajes de programacion, refactorizacion de funciones y clean code, etc ...), si quereis visitar la pagina del proyecto podesis hacerlo desde este enlace https://perezdh13.github.io/e-comerce/
 
