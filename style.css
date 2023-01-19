@@ -203,6 +203,7 @@ a {
 .body-cart {
     display: flex;
     margin-left: 5vw;
+    min-height: 68vh;
 }
 
 .body-cart h2 {
