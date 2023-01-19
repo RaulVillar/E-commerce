@@ -50,6 +50,7 @@ Tecnologias usadas en este proyecto
   <img align="center" alt="Git" title="Git" height="50" width="80" src="https://blog.facialix.com/wp-content/uploads/2021/04/git-github-cero-facialix.jpg">
   <img align="center" alt="Jira" title="Jira" height="50" width="100" src="https://logos-marcas.com/wp-content/uploads/2021/03/Jira-Simbolo.png">
   <img align="center" alt="figma" title="figma" height="50" width="80" src="https://www.protocol.com/media-library/figma-logo.png?id=29208385&width=1200&height=600&coordinates=0%2C60%2C0%2C60">
+  <img align="center" alt="postman" title="postman" height="50" width="80" src="https://images.squarespace-cdn.com/content/v1/57c649658419c2380d1947be/1534825375055-OA4431YN1BZ93RTAEIZF/postman-tile.png?format=1500w">
 </div>
 
 
