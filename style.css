@@ -22,21 +22,16 @@ body {
 .bolsa {
     margin-right: -3%;
     margin-top: 1%;
-
 }
-
-.bolsa-img {
+.bolsa-img{
     width: 30%;
 }
-
-.menu-img {
+.menu-img{
     width: 30%;
 }
-
-.logo-img {
+.logo-img{
     width: 60%;
 }
-
 .line {
     margin-top: -10%;
 }
@@ -114,7 +109,7 @@ h2 {
 }
 
 #product-title {
-
+    
     letter-spacing: 0.2vh;
     font-size: 2.5vh;
     line-height: 3.5vh;
@@ -123,17 +118,19 @@ h2 {
 }
 
 #product-description {
-
+   
     margin-top: 5vh;
     height: 5.34vh;
     max-width: 40vw;
     line-height: 1.8vh;
     font-size: 1.5vh;
 
+    font-size: 1.5vh;
+
 }
 
 #product-price {
-
+    
     font-size: 3vh;
     margin-top: 3vh;
     text-align: start;
@@ -141,15 +138,15 @@ h2 {
 }
 
 #product-button {
-
+    
     text-align: center;
     border-color: black;
     background-color: white;
     border-radius: 5vh;
     font-size: 1.3vh;
     width: 20%;
-
-
+    
+    
 }
 
 #product-button:hover {
@@ -193,14 +190,14 @@ a {
 ********************************/
 
 .main-cart {
-
+    
     width: 60vw;
     text-align: center;
     padding-bottom: 10vh;
 }
 
 .total-cart {
-
+    
     width: 20vw;
     height: 65vh;
     margin-left: 5%;
@@ -227,7 +224,7 @@ a {
 
 .subtract,
 .add {
-
+   
     text-align: center;
     margin-top: 1vh;
     border-color: black;
@@ -242,7 +239,7 @@ a {
 }
 
 #delete-button {
-
+    
     text-align: center;
     margin-top: 1vh;
     border-color: black;
@@ -266,7 +263,7 @@ a {
 
 .deleteCart,
 #tramitarPedido {
-
+    
     text-align: center;
     margin-top: 1vh;
     border-color: black;
@@ -295,7 +292,7 @@ a {
 
 h2 {
 
-
+   
     margin-top: 1vh;
 
 }
@@ -313,9 +310,10 @@ h2 {
 
 }
 
+
 @media (max-width: 1500px) {
     #box {
-        width: 50%;
+        width: 45%;
     }
 
     #product-price {
@@ -355,33 +353,31 @@ h2 {
 @media (max-width: 700px) {
 
     #box {
-        width: 100%;
+        width: 90%;
     }
 
     #new,
     #products,
     #exclusive {
-        flex-direction: column;
-        height: auto;
-        width: 60vh;
         display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: 90vw;
     }
-
-    #product-price {
-        width: 58%;
+   
+    #product-price{
+        width:58%;
     }
-
-    #product-title {
+    #product-title{
         font-size: 3vh;
         margin-top: 6vh;
-
+        
     }
-
-    #product-description {
+    #product-description{
         font-size: 1.9vh;
     }
-
-    #product-image {
+    #product-image{
         width: 30%;
     }
 
