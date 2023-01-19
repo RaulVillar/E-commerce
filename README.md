@@ -33,7 +33,7 @@ Todos los elementos que seleccionamos en el carrito de la compra son guardados e
 Este proyecto a sido realizado por un equipo de 5 programadores en formacion:
 
 
-| [<img src="https://avatars.githubusercontent.com/u/120563338?v=4" width=115><br><sub>Pablo Pérez González</sub>](https://github.com/Perezdh13)| [<img src="https://avatars.githubusercontent.com/u/119669918?v=4" width=115><br><sub>Raúl Villar</sub>](https://github.com/RaulTheViking)| [<img src="https://avatars.githubusercontent.com/u/84899058?v=4" width=115><br><sub>Celia Cueria Barcia</sub>](https://github.com/celiacueria) | [<img src="https://avatars.githubusercontent.com/u/119506074?v=4" width=115><br><sub>Elena Pulido Alvaré</sub>](https://github.com/elenapulido) | [<img src="https://avatars.githubusercontent.com/u/110385073?v=4" width=115><br><sub>Génesys Rondón</sub>](https://github.com/Holapueblodev) |
+| [<img src="https://avatars.githubusercontent.com/u/120563338?v=4" width=115><br><sub>Pablo Pérez González</sub>](https://github.com/Perezdh13)| [<img src="https://avatars.githubusercontent.com/u/119669918?v=4" width=115><br><sub>Raúl Villar</sub>](https://github.com/RaulTheViking)| [<img src="https://avatars.githubusercontent.com/u/84899058?v=4" width=115><br><sub>Celia Cueria Barcia</sub>](https://github.com/celiacueria) | [<img src="https://avatars.githubusercontent.com/u/119506074?v=4" width=115><br><sub>Elena Pulido Alvaré</sub>](https://github.com/elenapulido) | [<img src="https://avatars.githubusercontent.com/u/110385073?v=4" width=115><br><sub>Carlos Sánchez Yerga</sub>](https://github.com/Holapueblodev) |
 | :---: | :---: | :---: |  :---: |  :---: |
 
 
@@ -46,7 +46,7 @@ Tecnologias usadas en este proyecto
   <img align="center" alt="HTML" title="HTML 5" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
   <img align="center" alt="CSS" title="CSS 3" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
   <img align="center" alt="JavaScript" title="JavaScript" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
-<br>
+<br><br>
   <img align="center" alt="Git" title="Git" height="50" width="80" src="https://blog.facialix.com/wp-content/uploads/2021/04/git-github-cero-facialix.jpg">
   <img align="center" alt="Jira" title="Jira" height="50" width="100" src="https://logos-marcas.com/wp-content/uploads/2021/03/Jira-Simbolo.png">
   <img align="center" alt="figma" title="figma" height="50" width="80" src="https://www.protocol.com/media-library/figma-logo.png?id=29208385&width=1200&height=600&coordinates=0%2C60%2C0%2C60">
