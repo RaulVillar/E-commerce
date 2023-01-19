@@ -17,7 +17,6 @@ body {
 
 .logo {
     margin-left: 24%;
-    margin-top: -9%;
 }
 
 .bolsa {
@@ -25,15 +24,19 @@ body {
     margin-top: 1%;
 
 }
-.bolsa-img{
+
+.bolsa-img {
     width: 30%;
 }
-.menu-img{
+
+.menu-img {
     width: 30%;
 }
-.logo-img{
+
+.logo-img {
     width: 60%;
 }
+
 .line {
     margin-top: -10%;
 }
@@ -47,7 +50,8 @@ body {
 h1 {
     margin: 1;
 }
-h2{
+
+h2 {
     font-weight: 400;
 }
 
@@ -93,7 +97,7 @@ h2{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 20.5vw;
+    width: 25%;
 
 }
 
@@ -110,7 +114,7 @@ h2{
 }
 
 #product-title {
-    
+
     letter-spacing: 0.2vh;
     font-size: 2.5vh;
     line-height: 3.5vh;
@@ -119,7 +123,7 @@ h2{
 }
 
 #product-description {
-   
+
     margin-top: 5vh;
     height: 5.34vh;
     max-width: 40vw;
@@ -129,7 +133,7 @@ h2{
 }
 
 #product-price {
-    
+
     font-size: 3vh;
     margin-top: 3vh;
     text-align: start;
@@ -137,12 +141,12 @@ h2{
 }
 
 #product-button {
-    
+
     text-align: center;
     border-color: black;
     background-color: white;
     border-radius: 5vh;
-    font-size: 80%;
+    font-size: 1.3vh;
     width: 20%;
 
 
@@ -189,14 +193,14 @@ a {
 ********************************/
 
 .main-cart {
-    
+
     width: 60vw;
     text-align: center;
     padding-bottom: 10vh;
 }
 
 .total-cart {
-    
+
     width: 20vw;
     height: 65vh;
     margin-left: 5%;
@@ -210,7 +214,7 @@ a {
 }
 
 .body-cart h2 {
-    padding-top:3vh
+    padding-top: 3vh
 }
 
 .itemQuantity {
@@ -223,7 +227,7 @@ a {
 
 .subtract,
 .add {
-   
+
     text-align: center;
     margin-top: 1vh;
     border-color: black;
@@ -238,7 +242,7 @@ a {
 }
 
 #delete-button {
-    
+
     text-align: center;
     margin-top: 1vh;
     border-color: black;
@@ -262,7 +266,7 @@ a {
 
 .deleteCart,
 #tramitarPedido {
-    
+
     text-align: center;
     margin-top: 1vh;
     border-color: black;
@@ -291,7 +295,7 @@ a {
 
 h2 {
 
-   
+
     margin-top: 1vh;
 
 }
@@ -309,8 +313,50 @@ h2 {
 
 }
 
+@media (max-width: 1500px) {
+    #box {
+        width: 50%;
+    }
+
+    #product-price {
+        width: 58%;
+    }
+
+    #product-title {
+        font-size: 3vh;
+        margin-top: 6vh;
+
+    }
+
+    #product-description {
+        font-size: 1.9vh;
+    }
+
+    #product-image {
+        width: 30%;
+    }
+
+    #product-button {
+        width: 10%;
+        font-size: 1.4vh;
+    }
+
+    #new,
+    #products,
+    #exclusive {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: auto;
+        width: 95vw;
+    }
+}
 
 @media (max-width: 700px) {
+
+    #box {
+        width: 100%;
+    }
 
     #new,
     #products,
@@ -320,27 +366,31 @@ h2 {
         width: 60vh;
         display: flex;
     }
-   
-    #product-price{
-        width:58%;
+
+    #product-price {
+        width: 58%;
     }
-    #product-title{
+
+    #product-title {
         font-size: 3vh;
         margin-top: 6vh;
-        
+
     }
-    #product-description{
+
+    #product-description {
         font-size: 1.9vh;
     }
-    #product-image{
+
+    #product-image {
         width: 30%;
     }
-   
-   .bolsa-img,
-   .menu-img{
-    width: 60%;
-   }
-    .logo-img{
-        width:70% ;
-    }  
+
+    .bolsa-img,
+    .menu-img {
+        width: 60%;
+    }
+
+    .logo-img {
+        width: 70%;
+    }
 }
