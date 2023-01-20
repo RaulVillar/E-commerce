@@ -8,7 +8,7 @@
         - Test de una de las funciones.
     
     * A nivel visual:
-        - Una pagina de inicio con:
+        - Una página de inicio con:
             a. Productos destacados.
             b. Novedades.
             c. Productos exclusivos.
