@@ -33,7 +33,7 @@
 Este proyecto ha sido realizado por un equipo de 5 programadores en formación:
 
 
-| [<img src="https://avatars.githubusercontent.com/u/120563338?v=4" width=115><br><sub>Pablo Pérez González</sub>](https://github.com/Perezdh13)| [<img src="https://avatars.githubusercontent.com/u/119669918?v=4" width=115><br><sub>Raúl Villar</sub>](https://github.com/RaulTheViking)| [<img src="https://avatars.githubusercontent.com/u/84899058?v=4" width=115><br><sub>Celia Cueria Barcia</sub>](https://github.com/celiacueria) | [<img src="https://avatars.githubusercontent.com/u/119506074?v=4" width=115><br><sub>Elena Pulido Alvaré</sub>](https://github.com/elenapulido) | [<img src="https://avatars.githubusercontent.com/u/110385073?v=4" width=115><br><sub>Carlos Sánchez Yerga</sub>](https://github.com/Holapueblodev) |
+| [<img src="https://avatars.githubusercontent.com/u/120563338?v=4" width=115><br><sub>Pablo Pérez González</sub>](https://github.com/Perezdh13)| [<img src="https://avatars.githubusercontent.com/u/119669918?v=4" width=115><br><sub>Raúl Villar</sub>](https://github.com/RaulVillar)| [<img src="https://avatars.githubusercontent.com/u/84899058?v=4" width=115><br><sub>Celia Cueria Barcia</sub>](https://github.com/celiacueria) | [<img src="https://avatars.githubusercontent.com/u/119506074?v=4" width=115><br><sub>Elena Pulido Alvaré</sub>](https://github.com/elenapulido) | [<img src="https://avatars.githubusercontent.com/u/110385073?v=4" width=115><br><sub>Carlos Sánchez Yerga</sub>](https://github.com/Holapueblodev) |
 | :---: | :---: | :---: |  :---: |  :---: |
 
 
